@@ -5,10 +5,40 @@
 @layer base {
   html {
     -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    scroll-behavior: smooth;
   }
 
   body {
     @apply bg-cream text-espresso font-sans antialiased;
+  }
+
+  ::selection {
+    background-color: rgba(176, 141, 87, 0.18);
+  }
+}
+
+@layer components {
+  .menu-divider {
+    @apply relative h-px w-full;
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(176, 141, 87, 0.3) 20%,
+      rgba(176, 141, 87, 0.5) 50%,
+      rgba(176, 141, 87, 0.3) 80%,
+      transparent 100%
+    );
+  }
+
+  .menu-divider-short {
+    @apply relative mx-auto h-px w-16;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(176, 141, 87, 0.6),
+      transparent
+    );
   }
 }
 

@@ -1,4 +1,7 @@
 import type { MenuCategory } from "../data/menu-types";
+import { useLanguage } from "../i18n/LanguageContext";
+import { pickLocalized } from "../i18n/types";
+import { tUi } from "../i18n/translations";
 
 type Props = {
   categories: MenuCategory[];
@@ -7,11 +10,19 @@ type Props = {
 };
 
 export default function CategoryTabs({ categories, active, onChange }: Props) {
-  const tabs: MenuCategory[] = [{ id: "all", label: "All" }, ...categories];
+  const { lang } = useLanguage();
+
+  const tabs = [
+    { id: "all", label: tUi("all", lang) },
+    ...categories.map((c) => ({
+      id: c.id,
+      label: pickLocalized(c.label, lang),
+    })),
+  ];
 
   return (
-    <nav aria-label="Menu categories">
-      <ul className="no-scrollbar -mx-5 flex gap-2 overflow-x-auto px-5 py-1">
+    <nav aria-label={tUi("categories", lang)}>
+      <ul className="no-scrollbar -mx-4 flex gap-2 overflow-x-auto px-4 py-1 sm:-mx-6 sm:px-6">
         {tabs.map((tab) => {
           const isActive = tab.id === active;
           return (
@@ -19,12 +30,12 @@ export default function CategoryTabs({ categories, active, onChange }: Props) {
               <button
                 type="button"
                 onClick={() => onChange(tab.id)}
-                aria-pressed={isActive}
+                {...(isActive ? { "aria-current": "page" as const } : {})}
                 className={[
-                  "whitespace-nowrap rounded-full px-4 py-2 text-sm font-medium transition",
+                  "whitespace-nowrap rounded-full px-4 py-2 text-sm font-medium tracking-wide transition-all duration-200",
                   isActive
-                    ? "bg-espresso text-cream shadow-card"
-                    : "border border-espresso/10 bg-white text-mocha hover:border-latte hover:text-espresso",
+                    ? "bg-espresso text-cream shadow-soft"
+                    : "text-warmgray hover:bg-parchment hover:text-espresso",
                 ].join(" ")}
               >
                 {tab.label}

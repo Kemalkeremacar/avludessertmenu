@@ -1,0 +1,33 @@
+import type { Language } from "./types";
+
+const ui = {
+  searchLabel: { tr: "Menüde ara", en: "Search the menu" },
+  searchPlaceholder: {
+    tr: "Menüde ara…",
+    en: "Search menu…",
+  },
+  clearSearch: { tr: "Aramayı temizle", en: "Clear search" },
+  all: { tr: "Tümü", en: "All" },
+  categories: { tr: "Menü kategorileri", en: "Menu categories" },
+  emptyTitle: {
+    tr: "Sonuç bulunamadı",
+    en: "No results found",
+  },
+  emptyCategory: {
+    tr: "Bu kategoride ürün bulunmuyor.",
+    en: "No items in this category.",
+  },
+  footer: { tr: "Menü", en: "Menu" },
+  language: { tr: "Dil", en: "Language" },
+} as const;
+
+export function tUi(key: keyof typeof ui, lang: Language): string {
+  return ui[key][lang];
+}
+
+export function tEmptyWithQuery(lang: Language, query: string): string {
+  if (lang === "tr") {
+    return `“${query}” için bir sonuç yok. Farklı bir arama veya kategori deneyin.`;
+  }
+  return `No results for “${query}”. Try a different search or category.`;
+}

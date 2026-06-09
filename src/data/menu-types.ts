@@ -1,13 +1,15 @@
+import type { LocalizedString } from "../i18n/types";
+
 export type MenuCategory = {
   id: string;
-  label: string;
-  description?: string;
+  label: LocalizedString;
+  description?: LocalizedString;
 };
 
 export type MenuItem = {
   id: string;
-  name: string;
-  description: string;
+  name: LocalizedString;
+  description: LocalizedString;
   price: string;
   category: string;
   image?: string;
@@ -18,6 +20,6 @@ export type MenuItem = {
 
 export type CafeInfo = {
   name: string;
-  tagline: string;
-  hours?: string;
+  tagline: LocalizedString;
+  hours?: LocalizedString;
 };
