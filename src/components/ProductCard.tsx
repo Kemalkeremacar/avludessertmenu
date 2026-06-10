@@ -4,22 +4,15 @@ import { pickLocalized } from "../i18n/types";
 
 type Props = {
   item: MenuItem;
-  featured?: boolean;
 };
 
-export default function ProductCard({ item, featured }: Props) {
+export default function ProductCard({ item }: Props) {
   const { lang } = useLanguage();
   const name = pickLocalized(item.name, lang);
   const description = pickLocalized(item.description, lang);
 
   return (
-    <article className="group relative py-5 pl-4" aria-label={name}>
-      {featured && (
-        <span
-          className="absolute left-0 top-[1.4rem] h-1.5 w-1.5 rounded-full bg-gold sm:top-[1.5rem]"
-          aria-hidden="true"
-        />
-      )}
+    <article className="group py-5" aria-label={name}>
       <div className="flex items-start justify-between gap-4">
         <h3 className="font-display text-lg font-medium leading-snug text-espresso sm:text-xl">
           {name}

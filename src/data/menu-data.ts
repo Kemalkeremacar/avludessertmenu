@@ -90,7 +90,6 @@ export const menuItems: MenuItem[] = [
     },
     price: "120 TL",
     category: "coffee",
-    isPopular: true,
   },
   {
     id: "cappuccino",
@@ -101,7 +100,6 @@ export const menuItems: MenuItem[] = [
     },
     price: "115 TL",
     category: "coffee",
-    isPopular: true,
   },
   {
     id: "flat-white",
@@ -122,7 +120,6 @@ export const menuItems: MenuItem[] = [
     },
     price: "130 TL",
     category: "cold",
-    isPopular: true,
   },
   {
     id: "iced-latte",
@@ -156,7 +153,6 @@ export const menuItems: MenuItem[] = [
     },
     price: "150 TL",
     category: "desserts",
-    isPopular: true,
   },
   {
     id: "brownie",
@@ -197,6 +193,5 @@ export const menuItems: MenuItem[] = [
     },
     price: "260 TL",
     category: "breakfast",
-    isPopular: true,
   },
 ];

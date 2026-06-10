@@ -58,11 +58,7 @@ export default function ProductList({
 
           <div className="divide-y divide-espresso/[0.06]">
             {section.items.map((item) => (
-              <ProductCard
-                key={item.id}
-                item={item}
-                featured={item.isPopular}
-              />
+              <ProductCard key={item.id} item={item} />
             ))}
           </div>
         </section>
