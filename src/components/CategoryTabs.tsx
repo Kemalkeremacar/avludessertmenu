@@ -35,7 +35,7 @@ export default function CategoryTabs({ categories, active, onChange }: Props) {
                   "whitespace-nowrap rounded-full px-4 py-2 text-sm font-medium tracking-wide transition-all duration-200",
                   isActive
                     ? "bg-espresso text-cream shadow-soft"
-                    : "text-warmgray hover:bg-parchment hover:text-espresso",
+                    : "border border-black/10 bg-white/70 text-black/75 hover:bg-parchment hover:text-black",
                 ].join(" ")}
               >
                 {tab.label}

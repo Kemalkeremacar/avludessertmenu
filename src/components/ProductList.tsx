@@ -36,27 +36,22 @@ export default function ProductList({
       {sections.map((section, sectionIndex) => (
         <section
           key={section.category?.id ?? "results"}
-          className={sectionIndex > 0 ? "mt-10" : ""}
+          id={section.category ? `cat-${section.category.id}` : undefined}
+          className={[
+            "scroll-mt-36",
+            sectionIndex > 0 ? "mt-10" : "",
+          ].join(" ")}
         >
           {section.category && activeCategory === "all" && (
-            <header className="mb-1 flex items-center gap-4 pt-2">
-              <h2 className="font-display text-2xl font-medium tracking-tight text-espresso sm:text-[1.7rem]">
+            <header className="mb-3 flex justify-center pt-2">
+              <h2 className="inline-flex items-center gap-2.5 rounded-full bg-espresso px-5 py-2 font-display text-lg font-bold tracking-tight text-cream shadow-md sm:text-xl">
+                <span className="h-1.5 w-1.5 rounded-full bg-gold-light" aria-hidden="true" />
                 {pickLocalized(section.category.label, lang)}
               </h2>
-              <span
-                className="h-px flex-1 bg-gradient-to-r from-gold/30 to-transparent"
-                aria-hidden="true"
-              />
             </header>
           )}
 
-          {section.category?.description && (
-            <p className="mb-2 text-sm italic text-warmgray/70 sm:text-[0.9rem]">
-              {pickLocalized(section.category.description, lang)}
-            </p>
-          )}
-
-          <div className="divide-y divide-espresso/[0.06]">
+          <div className="flex flex-col gap-2.5">
             {section.items.map((item) => (
               <ProductCard key={item.id} item={item} />
             ))}

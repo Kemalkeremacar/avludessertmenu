@@ -19,6 +19,13 @@ const ui = {
   },
   footer: { tr: "Menü", en: "Menu" },
   language: { tr: "Dil", en: "Language" },
+  welcomeTitle: { tr: "Hoş Geldiniz", en: "Welcome" },
+  welcomeSubtitle: {
+    tr: "Bir kategori seçerek menüyü keşfedin",
+    en: "Choose a category to explore the menu",
+  },
+  selectCategory: { tr: "Kategori Seçin", en: "Select a category" },
+  viewAll: { tr: "Tüm Menü", en: "Full Menu" },
 } as const;
 
 export function tUi(key: keyof typeof ui, lang: Language): string {
