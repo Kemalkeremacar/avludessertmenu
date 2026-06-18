@@ -13,8 +13,8 @@ export const cafeInfo: CafeInfo = {
     en: "Handcrafted desserts and thoughtfully prepared coffee.",
   },
   hours: {
-    tr: "Her gün açık · 08:00 – 22:00",
-    en: "Open daily · 08:00 – 22:00",
+    tr: "Her gün açık · 11:00 – 01:00",
+    en: "Open daily · 11:00 – 01:00",
   },
 };
 
@@ -1160,7 +1160,7 @@ export const menuItems: MenuItem[] = [
     id: "mersin-kruvasan",
     name: { tr: "Mersin Toi Kruvasan", en: "Mersin Toi Croissant" },
     description: { tr: "Mersin toi kruvasan.", en: "Mersin toi croissant." },
-    price: "300 TL",
+    price: "330 TL",
     category: "desserts",
     isPopular: true,
   },

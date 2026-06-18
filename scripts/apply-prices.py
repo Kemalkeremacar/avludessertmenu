@@ -133,7 +133,7 @@ PRICES: dict[str, int] = {
     "dondurma-meyveli": 30,
     "dondurma-fistikli": 50,
     # desserts
-    "mersin-kruvasan": 300,
+    "mersin-kruvasan": 330,
     "trilece": 190,
     "san-sebastian-cheesecake": 300,
     "cheesecake": 250,
