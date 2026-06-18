@@ -20,42 +20,49 @@ export default function ProductCard({ item }: Props) {
   return (
     <li
       className={[
-        "group mb-2 last:mb-0",
+        "group mb-1.5 last:mb-0",
         isFeatured
           ? "rounded-2xl border border-gold/25 bg-gradient-to-br from-gold/[0.08] to-parchment/50 p-3.5 sm:p-4"
-          : "rounded-xl px-1 py-3 sm:px-2 sm:py-2.5 lg:px-3 lg:py-3",
+          : "rounded-xl px-1 py-2.5 sm:px-2 sm:py-3",
         unavailable ? "opacity-55 saturate-50" : "",
       ].join(" ")}
     >
-      <div className="flex items-baseline gap-2">
+      <div
+        className={[
+          "grid items-baseline gap-x-3 gap-y-0.5",
+          hasPrice
+            ? "grid-cols-[minmax(0,1fr)_auto] sm:grid-cols-[minmax(0,1fr)_minmax(2rem,1fr)_auto]"
+            : "grid-cols-1",
+        ].join(" ")}
+      >
         <h3
           className={[
-            "type-item-name min-w-0 flex-1",
+            "type-item-name min-w-0",
             isFeatured ? "text-lg sm:text-xl" : "",
           ].join(" ")}
         >
           {name}
         </h3>
 
-        {hasPrice && <span className="menu-leader" aria-hidden="true" />}
+        {hasPrice && <span className="menu-leader hidden sm:block" aria-hidden="true" />}
 
         {hasPrice && (
           <span
             className={[
-              "shrink-0 whitespace-nowrap",
+              "shrink-0 justify-self-end whitespace-nowrap",
               isFeatured ? "type-item-price-featured text-lg sm:text-xl" : "type-item-price",
             ].join(" ")}
           >
             {item.price}
           </span>
         )}
-      </div>
 
-      {hasDesc && (
-        <p className="type-section-desc mt-0.5 leading-snug text-warmgray/85">
-          {description}
-        </p>
-      )}
+        {hasDesc && (
+          <p className="type-section-desc col-span-full mt-0.5 leading-snug text-warmgray/85">
+            {description}
+          </p>
+        )}
+      </div>
 
       {(isFeatured || unavailable) && (
         <div className="mt-1.5 flex flex-wrap items-center gap-2">
@@ -74,7 +81,7 @@ export default function ProductCard({ item }: Props) {
       )}
 
       {item.image && (
-        <div className="mt-3 aspect-[2.2/1] overflow-hidden rounded-xl border border-gold/15">
+        <div className="mt-3 aspect-[2.2/1] overflow-hidden rounded-xl border border-gold/15 sm:aspect-[2.4/1]">
           <img
             src={item.image}
             alt={name}

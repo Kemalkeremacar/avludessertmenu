@@ -101,8 +101,12 @@ export default function App() {
   return (
     <div className="relative min-h-[100dvh] bg-cream">
       <div
-        className="pointer-events-none fixed inset-0 z-0 bg-cover bg-center bg-no-repeat"
+        className="pointer-events-none fixed inset-0 z-0 bg-cover bg-center bg-no-repeat md:bg-fixed"
         style={{ backgroundImage: `url('${BACKGROUND_IMAGE}')` }}
+        aria-hidden="true"
+      />
+      <div
+        className="pointer-events-none fixed inset-0 z-0 hidden bg-espresso/10 md:block"
         aria-hidden="true"
       />
 
@@ -114,51 +118,71 @@ export default function App() {
         />
       )}
 
-      <div className="relative z-10 lg:mx-auto lg:max-w-4xl lg:px-8">
+      <div className="relative z-10 mx-auto w-full max-w-lg px-4 sm:max-w-xl sm:px-6 md:max-w-2xl lg:max-w-6xl lg:px-8">
         <CafeHeader cafe={cafeInfo} />
 
-        <main className="relative mx-auto w-full max-w-2xl px-4 pb-[max(6rem,env(safe-area-inset-bottom))] sm:px-6 lg:max-w-none lg:px-0">
-          <div className="safe-top sticky top-0 z-20 -mx-4 rounded-b-2xl bg-parchment/95 px-4 pb-3 shadow-soft backdrop-blur-sm sm:-mx-6 sm:px-6 md:pt-3 lg:mx-0 lg:rounded-2xl lg:border lg:border-gold/10 lg:px-5 lg:pb-4 lg:pt-4">
-            <div className="flex items-stretch gap-2 md:max-w-xl lg:max-w-md">
-              <div className="min-w-0 flex-1">
-                <SearchBar value={query} onChange={setQuery} />
-              </div>
-              <LanguageToggle />
-            </div>
-            <div className="mt-3 md:mt-4">
+        <main className="pb-[max(5rem,env(safe-area-inset-bottom))] lg:grid lg:grid-cols-[13.5rem_minmax(0,1fr)] lg:items-start lg:gap-8">
+          <aside className="hidden lg:block">
+            <div className="sticky top-6 max-h-[calc(100dvh-3rem)] overflow-y-auto rounded-2xl border border-gold/15 bg-parchment/95 p-3 shadow-soft backdrop-blur-sm">
+              <p className="type-caption mb-2 px-2 text-warmgray/80">
+                {tUi("categories", lang)}
+              </p>
               <CategoryTabs
                 categories={categories}
                 active={activeCategory}
                 onChange={handleCategoryChange}
                 disabled={isSearching}
+                layout="sidebar"
               />
-              {isSearching && (
-                <p className="type-caption mt-2 text-warmgray/80">
-                  {tUi("searchingAllCategories", lang)}
-                </p>
-              )}
             </div>
-          </div>
+          </aside>
 
-          <section className="mt-5 lg:mt-8" aria-live="polite">
-            {filteredItems.length > 0 ? (
-              <ProductList
-                items={filteredItems}
-                categories={categories}
-                activeCategory={isSearching ? "all" : activeCategory}
-              />
-            ) : (
-              <EmptyState query={query.trim()} />
-            )}
-          </section>
+          <div className="min-w-0">
+            <div className="safe-top sticky top-0 z-20 rounded-2xl border border-gold/10 bg-parchment/95 p-3 shadow-soft backdrop-blur-sm sm:p-4 lg:top-4 lg:rounded-3xl">
+              <div className="flex items-stretch gap-2 sm:gap-3">
+                <div className="min-w-0 flex-1">
+                  <SearchBar value={query} onChange={setQuery} />
+                </div>
+                <LanguageToggle />
+              </div>
+
+              <div className="mt-3 lg:hidden">
+                <CategoryTabs
+                  categories={categories}
+                  active={activeCategory}
+                  onChange={handleCategoryChange}
+                  disabled={isSearching}
+                  layout="auto"
+                />
+                {isSearching && (
+                  <p className="type-caption mt-2 text-warmgray/80">
+                    {tUi("searchingAllCategories", lang)}
+                  </p>
+                )}
+              </div>
+            </div>
+
+            <section
+              className="mt-4 sm:mt-5 lg:mt-6 lg:rounded-3xl lg:border lg:border-gold/15 lg:bg-parchment/92 lg:p-5 lg:shadow-soft lg:backdrop-blur-sm xl:p-6"
+              aria-live="polite"
+            >
+              {filteredItems.length > 0 ? (
+                <ProductList
+                  items={filteredItems}
+                  categories={categories}
+                  activeCategory={isSearching ? "all" : activeCategory}
+                />
+              ) : (
+                <EmptyState query={query.trim()} />
+              )}
+            </section>
+          </div>
         </main>
 
-        <footer className="safe-bottom mx-auto mt-6 max-w-2xl px-4 sm:px-6 lg:max-w-none lg:px-0">
-          <div className="rounded-2xl bg-parchment py-7 text-center shadow-soft lg:py-8">
+        <footer className="safe-bottom mt-6 lg:mt-8">
+          <div className="rounded-2xl border border-gold/10 bg-parchment/95 py-7 text-center shadow-soft backdrop-blur-sm lg:py-8">
             <div className="menu-divider-short mb-4" />
-            <p className="type-section-title text-lg">
-              {cafeInfo.name}
-            </p>
+            <p className="type-section-title text-lg">{cafeInfo.name}</p>
             <p className="type-label type-label-wide mt-2 text-espresso/55">
               {tUi("footer", lang)}
             </p>

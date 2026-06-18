@@ -31,8 +31,8 @@ export default function CafeHeader({ cafe }: Props) {
   const { lang } = useLanguage();
 
   return (
-    <header className="relative bg-gradient-to-b from-espresso/60 via-espresso/30 to-transparent px-4 pb-8 pt-[max(1.25rem,env(safe-area-inset-top))] sm:px-6 sm:pb-12 md:pb-16 md:pt-8 lg:pb-20 lg:pt-10">
-      <div className="mx-auto max-w-2xl text-center lg:max-w-3xl">
+    <header className="relative bg-gradient-to-b from-espresso/60 via-espresso/30 to-transparent px-2 pb-8 pt-[max(1.25rem,env(safe-area-inset-top))] sm:pb-10 md:pb-14 md:pt-8 lg:rounded-b-3xl lg:pb-16 lg:pt-10">
+      <div className="mx-auto max-w-xl text-center lg:max-w-2xl">
         <Ornament />
 
         <h1 className="type-hero mt-3 sm:mt-4">

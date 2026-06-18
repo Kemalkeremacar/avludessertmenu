@@ -49,8 +49,8 @@ export default function ProductList({
             id={`cat-${section.category.id}`}
             className={sectionIndex > 0 ? "scroll-anchor pt-1" : "scroll-anchor"}
           >
-            <div className="overflow-hidden rounded-2xl border border-gold/20 bg-parchment shadow-soft lg:rounded-3xl">
-              <header className="flex items-center gap-3 border-b border-gold/15 bg-cream px-4 py-3 sm:px-5 sm:py-3.5 lg:px-6 lg:py-4">
+            <div className="overflow-hidden rounded-2xl border border-gold/20 bg-cream/80 shadow-soft lg:border-0 lg:bg-transparent lg:shadow-none">
+              <header className="flex items-center gap-3 border-b border-gold/15 bg-cream px-4 py-3 sm:px-5 sm:py-3.5 lg:rounded-2xl lg:border lg:border-gold/15 lg:bg-cream lg:px-5 lg:py-4">
                 <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-gold/25 bg-parchment text-gold lg:h-9 lg:w-9">
                   <CategoryIcon categoryId={section.category.id} className="h-3.5 w-3.5 lg:h-4 lg:w-4" />
                 </div>
@@ -71,7 +71,7 @@ export default function ProductList({
                 </div>
               </header>
 
-              <ul className="px-3 py-2 sm:px-4 sm:py-3 lg:px-6 lg:py-4">
+              <ul className="divide-y divide-gold/10 px-2 py-1 sm:px-3 sm:py-2 lg:rounded-2xl lg:border lg:border-gold/15 lg:bg-parchment/80 lg:px-4 lg:py-2">
                 {section.items.map((item) => (
                   <ProductCard key={item.id} item={item} />
                 ))}
