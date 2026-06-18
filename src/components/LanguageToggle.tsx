@@ -7,12 +7,12 @@ export default function LanguageToggle() {
   return (
     <fieldset className="shrink-0 border-0 p-0">
       <legend className="sr-only">{tUi("language", lang)}</legend>
-      <div className="inline-flex min-h-[48px] gap-0.5 rounded-xl border border-gold/15 bg-cream p-1 shadow-soft">
+      <div className="inline-flex min-h-[48px] gap-0.5 rounded-xl border border-gold/15 bg-cream p-1 shadow-soft md:min-h-[44px]">
         {(["tr", "en"] as const).map((code) => (
           <label
             key={code}
             className={[
-              "type-label touch-manipulation flex min-h-[40px] min-w-[44px] cursor-pointer items-center justify-center rounded-[10px] px-3 font-semibold transition-all duration-200",
+              "type-label flex min-h-[40px] min-w-[44px] cursor-pointer items-center justify-center rounded-[10px] px-3 font-semibold transition-all duration-200 md:min-h-[36px] md:min-w-[40px] md:px-2.5",
               lang === code
                 ? "bg-espresso text-cream"
                 : "text-warmgray hover:text-espresso",

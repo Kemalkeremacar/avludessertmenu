@@ -20,6 +20,12 @@
     padding-right: env(safe-area-inset-right, 0px);
   }
 
+  @media (min-width: 768px) {
+    body {
+      overscroll-behavior-y: auto;
+    }
+  }
+
   h1,
   h2,
   h3 {
@@ -125,6 +131,22 @@
 
   .scroll-anchor {
     scroll-margin-top: calc(11rem + env(safe-area-inset-top, 0px));
+  }
+
+  @media (min-width: 768px) {
+    .scroll-anchor {
+      scroll-margin-top: 9rem;
+    }
+
+    .type-input {
+      font-size: 15px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .scroll-anchor {
+      scroll-margin-top: 8rem;
+    }
   }
 
   .animate-sheet-up {

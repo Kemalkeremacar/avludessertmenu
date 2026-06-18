@@ -50,7 +50,7 @@ export default function WelcomeOverlay({ cafeName, categories, onSelect }: Props
         aria-hidden="true"
       />
 
-      <div className="relative flex h-[100dvh] flex-col px-4 pb-[max(1rem,env(safe-area-inset-bottom))] pt-[max(1.5rem,env(safe-area-inset-top))] sm:px-8">
+      <div className="relative mx-auto flex h-[100dvh] w-full max-w-5xl flex-col px-4 pb-[max(1rem,env(safe-area-inset-bottom))] pt-[max(1.5rem,env(safe-area-inset-top))] sm:px-8">
         <div className="shrink-0 text-center">
           <Ornament />
           <h1 className="type-welcome-title mt-3 sm:mt-4">
@@ -64,20 +64,20 @@ export default function WelcomeOverlay({ cafeName, categories, onSelect }: Props
           </div>
         </div>
 
-        <div className="no-scrollbar mx-auto mt-4 w-full max-w-md flex-1 overflow-y-auto sm:mt-6">
-          <div className="grid grid-cols-2 gap-2.5 pb-2 sm:gap-3">
+        <div className="no-scrollbar mx-auto mt-4 w-full max-w-md flex-1 overflow-y-auto sm:mt-6 md:max-w-3xl lg:max-w-4xl">
+          <div className="grid grid-cols-2 gap-2.5 pb-2 sm:grid-cols-3 sm:gap-3 lg:grid-cols-4 xl:grid-cols-5">
             {categories.map((c, i) => (
               <button
                 key={c.id}
                 type="button"
                 onClick={() => onSelect(c.id)}
                 style={{ animationDelay: `${i * 35}ms` }}
-                className="group touch-manipulation animate-fade-in flex min-h-[5.75rem] flex-col items-center justify-center gap-2 rounded-2xl border border-cream/15 bg-cream/[0.07] px-2 py-3 text-center backdrop-blur-md transition-all duration-200 active:scale-[0.98] active:border-gold/50 active:bg-cream/[0.14] sm:min-h-[6.5rem] sm:gap-2.5 sm:px-3 sm:py-5"
+                className="group touch-manipulation animate-fade-in flex min-h-[5.75rem] flex-col items-center justify-center gap-2 rounded-2xl border border-cream/15 bg-cream/[0.07] px-2 py-3 text-center backdrop-blur-md transition-all duration-200 hover:border-gold/40 hover:bg-cream/[0.12] active:scale-[0.98] active:border-gold/50 active:bg-cream/[0.14] sm:min-h-[6.5rem] sm:gap-2.5 sm:px-3 sm:py-5"
               >
                 <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gold/15 text-gold-light sm:h-11 sm:w-11">
                   <CategoryIcon categoryId={c.id} className="h-5 w-5" />
                 </span>
-                <span className="type-ui line-clamp-3 text-[11px] leading-snug text-cream sm:text-xs">
+                <span className="type-ui line-clamp-3 text-[11px] leading-snug text-cream sm:text-xs lg:text-sm">
                   {pickLocalized(c.label, lang)}
                 </span>
               </button>

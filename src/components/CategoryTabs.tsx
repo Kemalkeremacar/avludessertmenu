@@ -19,6 +19,18 @@ type TabOption = {
   label: string;
 };
 
+function pillClasses(isActive: boolean, disabled: boolean) {
+  return [
+    "type-ui whitespace-nowrap rounded-full px-4 py-2 tracking-wide transition-all duration-200",
+    disabled
+      ? "cursor-not-allowed opacity-60"
+      : "hover:bg-parchment hover:text-espresso",
+    isActive
+      ? "bg-espresso text-cream shadow-soft"
+      : "border border-gold/15 bg-cream text-espresso/75",
+  ].join(" ");
+}
+
 export default function CategoryTabs({
   categories,
   active,
@@ -56,6 +68,7 @@ export default function CategoryTabs({
   }, [open]);
 
   const handleSelect = (id: string) => {
+    if (disabled) return;
     onChange(id);
     setOpen(false);
   };
@@ -63,7 +76,7 @@ export default function CategoryTabs({
   const sheet = open
     ? createPortal(
         <div
-          className="fixed inset-0 z-[100] flex items-end justify-center"
+          className="fixed inset-0 z-[100] flex items-end justify-center md:items-center md:p-6"
           role="dialog"
           aria-modal="true"
           aria-label={tUi("selectCategory", lang)}
@@ -75,14 +88,14 @@ export default function CategoryTabs({
             aria-label={tUi("close", lang)}
           />
 
-          <div className="animate-sheet-up relative flex max-h-[min(85dvh,28rem)] w-full max-w-2xl flex-col rounded-t-3xl border border-gold/15 bg-parchment pb-[env(safe-area-inset-bottom,0px)] shadow-2xl">
+          <div className="animate-sheet-up relative flex max-h-[min(85dvh,28rem)] w-full max-w-2xl flex-col rounded-t-3xl border border-gold/15 bg-parchment pb-[env(safe-area-inset-bottom,0px)] shadow-2xl md:max-h-[min(70vh,32rem)] md:rounded-3xl">
             <div className="flex items-center justify-between border-b border-gold/15 px-4 py-4 sm:px-5">
               <h2 className="type-section-title text-base">{tUi("selectCategory", lang)}</h2>
               <button
                 type="button"
                 onClick={() => setOpen(false)}
                 aria-label={tUi("close", lang)}
-                className="touch-target touch-manipulation flex items-center justify-center rounded-full text-warmgray transition active:bg-cream active:text-espresso"
+                className="touch-target touch-manipulation flex items-center justify-center rounded-full text-warmgray transition hover:bg-cream hover:text-espresso active:bg-cream active:text-espresso"
               >
                 <X className="h-5 w-5" aria-hidden="true" />
               </button>
@@ -100,7 +113,7 @@ export default function CategoryTabs({
                         "touch-manipulation mb-1 flex min-h-[52px] w-full items-center gap-3 rounded-xl px-3 py-2.5 text-left transition-colors active:scale-[0.99]",
                         isActive
                           ? "bg-espresso text-cream shadow-soft"
-                          : "text-espresso active:bg-cream",
+                          : "text-espresso hover:bg-cream active:bg-cream",
                       ].join(" ")}
                       {...(isActive ? { "aria-current": "true" as const } : {})}
                     >
@@ -136,29 +149,52 @@ export default function CategoryTabs({
     : null;
 
   return (
-    <nav aria-label={tUi("categories", lang)}>
-      <button
-        type="button"
-        disabled={disabled}
-        onClick={() => !disabled && setOpen(true)}
-        aria-haspopup="dialog"
-        aria-label={tUi("selectCategory", lang)}
-        className={[
-          "type-ui flex min-h-[48px] w-full touch-manipulation items-center justify-between gap-3 rounded-xl border border-gold/15 bg-cream px-4 py-3 text-left text-base text-espresso shadow-soft outline-none transition-all duration-200",
-          "focus-visible:border-gold/30 focus-visible:shadow-glow",
-          disabled ? "cursor-not-allowed opacity-60" : "active:scale-[0.99]",
-        ].join(" ")}
-      >
-        <span className="min-w-0 truncate">{activeLabel}</span>
-        <ChevronDown
+    <>
+      <nav aria-label={tUi("categories", lang)} className="hidden md:block">
+        <ul className="flex flex-wrap gap-2">
+          {tabs.map((tab) => {
+            const isActive = tab.id === active;
+            return (
+              <li key={tab.id}>
+                <button
+                  type="button"
+                  disabled={disabled}
+                  onClick={() => handleSelect(tab.id)}
+                  className={pillClasses(isActive, disabled)}
+                  {...(isActive ? { "aria-current": "page" as const } : {})}
+                >
+                  {tab.label}
+                </button>
+              </li>
+            );
+          })}
+        </ul>
+      </nav>
+
+      <nav aria-label={tUi("categories", lang)} className="md:hidden">
+        <button
+          type="button"
+          disabled={disabled}
+          onClick={() => !disabled && setOpen(true)}
+          aria-haspopup="dialog"
+          aria-label={tUi("selectCategory", lang)}
           className={[
-            "h-4 w-4 shrink-0 text-warmgray/60 transition-transform duration-200",
-            open ? "rotate-180" : "",
+            "type-ui flex min-h-[48px] w-full touch-manipulation items-center justify-between gap-3 rounded-xl border border-gold/15 bg-cream px-4 py-3 text-left text-base text-espresso shadow-soft outline-none transition-all duration-200",
+            "focus-visible:border-gold/30 focus-visible:shadow-glow",
+            disabled ? "cursor-not-allowed opacity-60" : "active:scale-[0.99]",
           ].join(" ")}
-          aria-hidden="true"
-        />
-      </button>
-      {sheet}
-    </nav>
+        >
+          <span className="min-w-0 truncate">{activeLabel}</span>
+          <ChevronDown
+            className={[
+              "h-4 w-4 shrink-0 text-warmgray/60 transition-transform duration-200",
+              open ? "rotate-180" : "",
+            ].join(" ")}
+            aria-hidden="true"
+          />
+        </button>
+        {sheet}
+      </nav>
+    </>
   );
 }

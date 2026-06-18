@@ -26,7 +26,7 @@ export default function SearchBar({ value, onChange }: Props) {
         placeholder={tUi("searchPlaceholder", lang)}
         value={value}
         onChange={(e) => onChange(e.target.value)}
-        className="type-input min-h-[48px] w-full rounded-xl border border-gold/15 bg-cream py-3 pl-11 pr-12 shadow-soft outline-none transition-all duration-200 focus:border-gold/30 focus:shadow-glow"
+        className="type-input min-h-[48px] w-full rounded-xl border border-gold/15 bg-cream py-3 pl-11 pr-12 shadow-soft outline-none transition-all duration-200 focus:border-gold/30 focus:shadow-glow md:min-h-[44px] md:py-2.5"
       />
       {value && (
         <button

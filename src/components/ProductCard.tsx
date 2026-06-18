@@ -23,7 +23,7 @@ export default function ProductCard({ item }: Props) {
         "group mb-2 last:mb-0",
         isFeatured
           ? "rounded-2xl border border-gold/25 bg-gradient-to-br from-gold/[0.08] to-parchment/50 p-3.5 sm:p-4"
-          : "rounded-xl px-1 py-3 sm:px-2 sm:py-2.5",
+          : "rounded-xl px-1 py-3 sm:px-2 sm:py-2.5 lg:px-3 lg:py-3",
         unavailable ? "opacity-55 saturate-50" : "",
       ].join(" ")}
     >

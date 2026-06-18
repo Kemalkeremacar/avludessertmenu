@@ -114,18 +114,18 @@ export default function App() {
         />
       )}
 
-      <div className="relative z-10">
+      <div className="relative z-10 lg:mx-auto lg:max-w-4xl lg:px-8">
         <CafeHeader cafe={cafeInfo} />
 
-        <main className="relative mx-auto max-w-2xl px-4 pb-[max(6rem,env(safe-area-inset-bottom))] sm:px-6">
-          <div className="safe-top sticky top-0 z-20 -mx-4 rounded-b-2xl bg-parchment/95 px-4 pb-3 shadow-soft backdrop-blur-sm sm:-mx-6 sm:px-6">
-            <div className="flex items-stretch gap-2">
+        <main className="relative mx-auto w-full max-w-2xl px-4 pb-[max(6rem,env(safe-area-inset-bottom))] sm:px-6 lg:max-w-none lg:px-0">
+          <div className="safe-top sticky top-0 z-20 -mx-4 rounded-b-2xl bg-parchment/95 px-4 pb-3 shadow-soft backdrop-blur-sm sm:-mx-6 sm:px-6 md:pt-3 lg:mx-0 lg:rounded-2xl lg:border lg:border-gold/10 lg:px-5 lg:pb-4 lg:pt-4">
+            <div className="flex items-stretch gap-2 md:max-w-xl lg:max-w-md">
               <div className="min-w-0 flex-1">
                 <SearchBar value={query} onChange={setQuery} />
               </div>
               <LanguageToggle />
             </div>
-            <div className="mt-3">
+            <div className="mt-3 md:mt-4">
               <CategoryTabs
                 categories={categories}
                 active={activeCategory}
@@ -140,7 +140,7 @@ export default function App() {
             </div>
           </div>
 
-          <section className="mt-5" aria-live="polite">
+          <section className="mt-5 lg:mt-8" aria-live="polite">
             {filteredItems.length > 0 ? (
               <ProductList
                 items={filteredItems}
@@ -153,8 +153,8 @@ export default function App() {
           </section>
         </main>
 
-        <footer className="safe-bottom mx-auto mt-6 max-w-2xl px-4 sm:px-6">
-          <div className="rounded-2xl bg-parchment py-7 text-center shadow-soft">
+        <footer className="safe-bottom mx-auto mt-6 max-w-2xl px-4 sm:px-6 lg:max-w-none lg:px-0">
+          <div className="rounded-2xl bg-parchment py-7 text-center shadow-soft lg:py-8">
             <div className="menu-divider-short mb-4" />
             <p className="type-section-title text-lg">
               {cafeInfo.name}
