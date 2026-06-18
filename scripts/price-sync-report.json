@@ -1,0 +1,2481 @@
+{
+  "changes": [
+    {
+      "id": "affogato",
+      "name": "Affogato",
+      "old": "230 TL",
+      "new": "250 TL",
+      "category": "coffee"
+    },
+    {
+      "id": "caramel-latte-ice",
+      "name": "Caramel Coffee Latte Soğuk",
+      "old": "170 TL",
+      "new": null,
+      "category": "flavored-coffee",
+      "status": "NOT_IN_XLSX"
+    },
+    {
+      "id": "caramel-latte",
+      "name": "Caramel Coffee Latte Sıcak",
+      "old": "170 TL",
+      "new": null,
+      "category": "flavored-coffee",
+      "status": "NOT_IN_XLSX"
+    },
+    {
+      "id": "coffee-latte",
+      "name": "Coffee Latte Sıcak",
+      "old": "160 TL",
+      "new": null,
+      "category": "flavored-coffee",
+      "status": "NOT_IN_XLSX"
+    },
+    {
+      "id": "coffee-latte-ice",
+      "name": "Coffee Latte Soğuk",
+      "old": "160 TL",
+      "new": null,
+      "category": "flavored-coffee",
+      "status": "NOT_IN_XLSX"
+    },
+    {
+      "id": "vanilla-latte",
+      "name": "Vanilla Coffee Latte Sıcak",
+      "old": "170 TL",
+      "new": null,
+      "category": "flavored-coffee",
+      "status": "NOT_IN_XLSX"
+    },
+    {
+      "id": "vanilla-latte-ice",
+      "name": "Vanilla Coffee Latte Soğuk",
+      "old": "170 TL",
+      "new": null,
+      "category": "flavored-coffee",
+      "status": "NOT_IN_XLSX"
+    },
+    {
+      "id": "pistachio-latte",
+      "name": "Antep Fıstıklı Coffee Latte Sıcak",
+      "old": "170 TL",
+      "new": null,
+      "category": "flavored-coffee",
+      "status": "NOT_IN_XLSX"
+    },
+    {
+      "id": "pistachio-latte-ice",
+      "name": "Antep Fıstıklı Coffee Latte Soğuk",
+      "old": "170 TL",
+      "new": null,
+      "category": "flavored-coffee",
+      "status": "NOT_IN_XLSX"
+    },
+    {
+      "id": "tahini-latte",
+      "name": "Tahini Coffee Latte Sıcak",
+      "old": "170 TL",
+      "new": null,
+      "category": "flavored-coffee",
+      "status": "NOT_IN_XLSX"
+    },
+    {
+      "id": "tahini-latte-ice",
+      "name": "Tahini Coffee Latte Soğuk",
+      "old": "170 TL",
+      "new": null,
+      "category": "flavored-coffee",
+      "status": "NOT_IN_XLSX"
+    },
+    {
+      "id": "hurma-latte",
+      "name": "Medjool Hurma Coffee Latte Sıcak",
+      "old": "170 TL",
+      "new": null,
+      "category": "flavored-coffee",
+      "status": "NOT_IN_XLSX"
+    },
+    {
+      "id": "hurma-latte-ice",
+      "name": "Medjool Hurma Latte Coffee Soğuk",
+      "old": "170 TL",
+      "new": null,
+      "category": "flavored-coffee",
+      "status": "NOT_IN_XLSX"
+    },
+    {
+      "id": "mocha-ice",
+      "name": "Coffee Mocha Soğuk",
+      "old": "170 TL",
+      "new": null,
+      "category": "flavored-coffee",
+      "status": "NOT_IN_XLSX"
+    },
+    {
+      "id": "caramel-mocha-ice",
+      "name": "Coffee Caramel Soğuk Mocha",
+      "old": "180 TL",
+      "new": null,
+      "category": "flavored-coffee",
+      "status": "NOT_IN_XLSX"
+    },
+    {
+      "id": "caramel-mocha",
+      "name": "Coffee Caramel Sıcak Mocha",
+      "old": "180 TL",
+      "new": null,
+      "category": "flavored-coffee",
+      "status": "NOT_IN_XLSX"
+    },
+    {
+      "id": "white-mocha",
+      "name": "Coffee White Mocha Sıcak",
+      "old": "180 TL",
+      "new": null,
+      "category": "flavored-coffee",
+      "status": "NOT_IN_XLSX"
+    },
+    {
+      "id": "white-mocha-ice",
+      "name": "Coffee White Mocha Soğuk",
+      "old": "180 TL",
+      "new": null,
+      "category": "flavored-coffee",
+      "status": "NOT_IN_XLSX"
+    },
+    {
+      "id": "oreo-mocha",
+      "name": "Oreo Coffee Mocha Sıcak",
+      "old": "180 TL",
+      "new": null,
+      "category": "flavored-coffee",
+      "status": "NOT_IN_XLSX"
+    },
+    {
+      "id": "oreo-mocha-ice",
+      "name": "Oreo Coffee Mocha Soğuk",
+      "old": "180 TL",
+      "new": null,
+      "category": "flavored-coffee",
+      "status": "NOT_IN_XLSX"
+    },
+    {
+      "id": "lotus-mocha",
+      "name": "Lotus Coffee Mocha Sıcak",
+      "old": "180 TL",
+      "new": null,
+      "category": "flavored-coffee",
+      "status": "NOT_IN_XLSX"
+    },
+    {
+      "id": "lotus-mocha-ice",
+      "name": "Lotus Coffee Mocha Soğuk",
+      "old": "180 TL",
+      "new": null,
+      "category": "flavored-coffee",
+      "status": "NOT_IN_XLSX"
+    },
+    {
+      "id": "chocolate-frappe",
+      "name": "Çikolata Frappe",
+      "old": "190 TL",
+      "new": null,
+      "category": "frappe",
+      "status": "NOT_IN_XLSX"
+    },
+    {
+      "id": "caramel-frappe",
+      "name": "Karamel Frappe",
+      "old": "190 TL",
+      "new": null,
+      "category": "frappe",
+      "status": "NOT_IN_XLSX"
+    },
+    {
+      "id": "vanilla-frappe",
+      "name": "Vanilya Frappe",
+      "old": "190 TL",
+      "new": null,
+      "category": "frappe",
+      "status": "NOT_IN_XLSX"
+    },
+    {
+      "id": "hell-qahwa",
+      "name": "Hell-I Qahwa Menengiç Kahvesi",
+      "old": "90 TL",
+      "new": null,
+      "category": "turkish-coffee",
+      "status": "NOT_IN_XLSX"
+    },
+    {
+      "id": "herbal-tea",
+      "name": "Şifalı Bitki Çayları",
+      "old": "120 TL",
+      "new": null,
+      "category": "tea",
+      "status": "NOT_IN_XLSX"
+    },
+    {
+      "id": "ice-matcha-latte",
+      "name": "Ice Matcha Latte",
+      "old": "155 TL",
+      "new": "180 TL",
+      "category": "matcha"
+    },
+    {
+      "id": "ice-vanilla-matcha",
+      "name": "Ice Matcha Vanilla Latte",
+      "old": "170 TL",
+      "new": "180 TL",
+      "category": "matcha"
+    },
+    {
+      "id": "beyaz-cikolata-cold",
+      "name": "Beyaz Çikolatalı Cold Brew",
+      "old": "160 TL",
+      "new": null,
+      "category": "cold",
+      "status": "NOT_IN_XLSX"
+    },
+    {
+      "id": "cinnamon-cream-cold",
+      "name": "Cinnamon Cream Cold Brew",
+      "old": "160 TL",
+      "new": null,
+      "category": "cold",
+      "status": "NOT_IN_XLSX"
+    },
+    {
+      "id": "cilek-dondurma-milkshake",
+      "name": "Çilek Dondurmalı Milkshake",
+      "old": "165 TL",
+      "new": "220 TL",
+      "category": "milkshake"
+    },
+    {
+      "id": "chocolate-milkshake",
+      "name": "Çikolata Dondurmalı Milkshake",
+      "old": "165 TL",
+      "new": "220 TL",
+      "category": "milkshake"
+    },
+    {
+      "id": "antep-fistik-dondurma",
+      "name": "Antep Fıstık Dondurmalı Milkshake",
+      "old": "165 TL",
+      "new": "220 TL",
+      "category": "milkshake"
+    },
+    {
+      "id": "avlutella-milkshake",
+      "name": "Avlutella Nutella Çikolata Milkshake",
+      "old": "165 TL",
+      "new": "220 TL",
+      "category": "milkshake"
+    },
+    {
+      "id": "limon-dondurma-milkshake",
+      "name": "Limon Dondurmalı Milkshake",
+      "old": "165 TL",
+      "new": "220 TL",
+      "category": "milkshake"
+    },
+    {
+      "id": "vanilya-dondurma-milkshake",
+      "name": "Vanilya Dondurmalı Milkshake",
+      "old": "165 TL",
+      "new": "220 TL",
+      "category": "milkshake"
+    },
+    {
+      "id": "kendin-sec-milkshake",
+      "name": "Dondurmanı Kendin Seç Milkshake",
+      "old": "165 TL",
+      "new": "220 TL",
+      "category": "milkshake"
+    },
+    {
+      "id": "avlu-bob-milkshake",
+      "name": "Avlu Bob Milkshake",
+      "old": "165 TL",
+      "new": null,
+      "category": "milkshake",
+      "status": "NOT_IN_XLSX"
+    },
+    {
+      "id": "yaban-mersini-frozen",
+      "name": "Yaban Mersini Frozen",
+      "old": "180 TL",
+      "new": null,
+      "category": "frozen",
+      "status": "NOT_IN_XLSX"
+    },
+    {
+      "id": "sari-bahce-smoothie",
+      "name": "Sarı Bahçe Meyveli Smoothies",
+      "old": "180 TL",
+      "new": "200 TL",
+      "category": "smoothie"
+    },
+    {
+      "id": "berry-smoothie",
+      "name": "Kırmızı Orman Meyveli Smoothies",
+      "old": "180 TL",
+      "new": "200 TL",
+      "category": "smoothie"
+    },
+    {
+      "id": "fusetea",
+      "name": "Fuse Tea",
+      "old": "85 TL",
+      "new": null,
+      "category": "soft-drinks",
+      "status": "NOT_IN_XLSX"
+    },
+    {
+      "id": "dondurma-sade",
+      "name": "Sade Dondurma (Top)",
+      "old": "40 TL",
+      "new": null,
+      "category": "ice-cream",
+      "status": "NOT_IN_XLSX"
+    },
+    {
+      "id": "dondurma-meyveli",
+      "name": "Meyveli Dondurma (Top)",
+      "old": "40 TL",
+      "new": null,
+      "category": "ice-cream",
+      "status": "NOT_IN_XLSX"
+    },
+    {
+      "id": "dondurma-fistikli",
+      "name": "Fıstıklı Dondurma (Top)",
+      "old": "50 TL",
+      "new": null,
+      "category": "ice-cream",
+      "status": "NOT_IN_XLSX"
+    },
+    {
+      "id": "san-sebastian-cheesecake",
+      "name": "Sansebastian Queencake (Eritilmiş Çikolata İle)",
+      "old": "300 TL",
+      "new": null,
+      "category": "desserts",
+      "status": "NOT_IN_XLSX"
+    },
+    {
+      "id": "cheesecake",
+      "name": "Cheescakess",
+      "old": "250 TL",
+      "new": null,
+      "category": "desserts",
+      "status": "NOT_IN_XLSX"
+    },
+    {
+      "id": "taze-frambuazli-cheesecake",
+      "name": "Taze Frambuazlı Cheescake",
+      "old": "250 TL",
+      "new": null,
+      "category": "desserts",
+      "status": "NOT_IN_XLSX"
+    },
+    {
+      "id": "taze-limonlu-cheesecake",
+      "name": "Taze Limonlu Cheescake",
+      "old": "250 TL",
+      "new": null,
+      "category": "desserts",
+      "status": "NOT_IN_XLSX"
+    },
+    {
+      "id": "karamelize-lotus-cheesecake",
+      "name": "Karamelize Lotus Cheescake",
+      "old": "250 TL",
+      "new": null,
+      "category": "desserts",
+      "status": "NOT_IN_XLSX"
+    },
+    {
+      "id": "carema-eclair",
+      "name": "Carema Eclair Ekler",
+      "old": "60 TL",
+      "new": "80 TL",
+      "category": "desserts"
+    },
+    {
+      "id": "tiramisu",
+      "name": "Hmm Tiramisu",
+      "old": "180 TL",
+      "new": "200 TL",
+      "category": "desserts"
+    },
+    {
+      "id": "elmali-tart",
+      "name": "Elmalı Tart",
+      "old": "220 TL",
+      "new": null,
+      "category": "desserts",
+      "status": "NOT_IN_XLSX"
+    },
+    {
+      "id": "sucuklu-toast",
+      "name": "Sucuklu",
+      "old": "200 TL",
+      "new": "210 TL",
+      "category": "toast"
+    },
+    {
+      "id": "pan-pizza-karisik",
+      "name": "Pan Pizza Karışık",
+      "old": "160 TL",
+      "new": null,
+      "category": "pizza",
+      "status": "NOT_IN_XLSX"
+    },
+    {
+      "id": "kids-sausage",
+      "name": "Sosisli Mısırlı",
+      "old": "205 TL",
+      "new": "210 TL",
+      "category": "kids"
+    },
+    {
+      "id": "nuggets",
+      "name": "4'lü Nuggets",
+      "old": "75 TL",
+      "new": null,
+      "category": "crispy",
+      "status": "NOT_IN_XLSX"
+    },
+    {
+      "id": "citir-kutusu",
+      "name": "Çıtır Kutusu (425g)",
+      "old": "145 TL",
+      "new": null,
+      "category": "crispy",
+      "status": "NOT_IN_XLSX"
+    },
+    {
+      "id": "patates-kovasi",
+      "name": "Patates Kovası (450g)",
+      "old": "215 TL",
+      "new": null,
+      "category": "crispy",
+      "status": "NOT_IN_XLSX"
+    }
+  ],
+  "new_in_xlsx": [
+    {
+      "name": "DAMLA SU PET",
+      "name_norm": "DAMLA SU PET",
+      "price": 25,
+      "price_str": "25 TL",
+      "category": "soft-drinks"
+    },
+    {
+      "name": "FUCEA TEA LIMONLU,ANANAS,MANGO ŞEFTALI,KARPUZ,KAVUN-ÇILEK",
+      "name_norm": "FUCEA TEA LIMONLUANANASMANGO SEFTALIKARPUZKAVUNCILEK",
+      "price": 85,
+      "price_str": "85 TL",
+      "category": "soft-drinks"
+    },
+    {
+      "name": "CARAMEL COFFE LATTE SOĞUK",
+      "name_norm": "CARAMEL COFFE LATTE SOGUK",
+      "price": 170,
+      "price_str": "170 TL",
+      "category": "flavored-coffee"
+    },
+    {
+      "name": "CARAMEL COFFE LATTE SICAK",
+      "name_norm": "CARAMEL COFFE LATTE SICAK",
+      "price": 170,
+      "price_str": "170 TL",
+      "category": "flavored-coffee"
+    },
+    {
+      "name": "COFFE LATTE SICAK",
+      "name_norm": "COFFE LATTE SICAK",
+      "price": 160,
+      "price_str": "160 TL",
+      "category": "flavored-coffee"
+    },
+    {
+      "name": "COFFE LATTE SOĞUK",
+      "name_norm": "COFFE LATTE SOGUK",
+      "price": 160,
+      "price_str": "160 TL",
+      "category": "flavored-coffee"
+    },
+    {
+      "name": "VANİLLA COFFE LATTE SICAK",
+      "name_norm": "VANILLA COFFE LATTE SICAK",
+      "price": 170,
+      "price_str": "170 TL",
+      "category": "flavored-coffee"
+    },
+    {
+      "name": "VANİLLA COFFE LATTE SOĞUK",
+      "name_norm": "VANILLA COFFE LATTE SOGUK",
+      "price": 170,
+      "price_str": "170 TL",
+      "category": "flavored-coffee"
+    },
+    {
+      "name": "ANTEP FISTIKLI COFFE LATTE SICAK",
+      "name_norm": "ANTEP FISTIKLI COFFE LATTE SICAK",
+      "price": 170,
+      "price_str": "170 TL",
+      "category": "flavored-coffee"
+    },
+    {
+      "name": "ANTEP FISTIKLI COFFE LATTE SOĞUK",
+      "name_norm": "ANTEP FISTIKLI COFFE LATTE SOGUK",
+      "price": 170,
+      "price_str": "170 TL",
+      "category": "flavored-coffee"
+    },
+    {
+      "name": "TAHİNİ COFFE LATTE SICAK",
+      "name_norm": "TAHINI COFFE LATTE SICAK",
+      "price": 170,
+      "price_str": "170 TL",
+      "category": "flavored-coffee"
+    },
+    {
+      "name": "TAHİNİ COFFE LATTE SOĞUK",
+      "name_norm": "TAHINI COFFE LATTE SOGUK",
+      "price": 170,
+      "price_str": "170 TL",
+      "category": "flavored-coffee"
+    },
+    {
+      "name": "MEDJOOL HURMA COFFE LATTE SICAK",
+      "name_norm": "MEDJOOL HURMA COFFE LATTE SICAK",
+      "price": 170,
+      "price_str": "170 TL",
+      "category": "flavored-coffee"
+    },
+    {
+      "name": "MEDJOOL HURMA LATTE COFFE SOĞUK",
+      "name_norm": "MEDJOOL HURMA LATTE COFFE SOGUK",
+      "price": 170,
+      "price_str": "170 TL",
+      "category": "flavored-coffee"
+    },
+    {
+      "name": "COFFE MOCHA SOĞUK",
+      "name_norm": "COFFE MOCHA SOGUK",
+      "price": 170,
+      "price_str": "170 TL",
+      "category": "flavored-coffee"
+    },
+    {
+      "name": "COFFE CARAMEL SOĞUK MOCHA",
+      "name_norm": "COFFE CARAMEL SOGUK MOCHA",
+      "price": 180,
+      "price_str": "180 TL",
+      "category": "flavored-coffee"
+    },
+    {
+      "name": "COFFE CARAMEL SICAK MOCHA",
+      "name_norm": "COFFE CARAMEL SICAK MOCHA",
+      "price": 180,
+      "price_str": "180 TL",
+      "category": "flavored-coffee"
+    },
+    {
+      "name": "COFFE WHITE MOCHA SICAK",
+      "name_norm": "COFFE WHITE MOCHA SICAK",
+      "price": 180,
+      "price_str": "180 TL",
+      "category": "flavored-coffee"
+    },
+    {
+      "name": "COFFE WHITE MOCHA SOĞUK",
+      "name_norm": "COFFE WHITE MOCHA SOGUK",
+      "price": 180,
+      "price_str": "180 TL",
+      "category": "flavored-coffee"
+    },
+    {
+      "name": "OREO COFFE MOCHA SICAK",
+      "name_norm": "OREO COFFE MOCHA SICAK",
+      "price": 180,
+      "price_str": "180 TL",
+      "category": "flavored-coffee"
+    },
+    {
+      "name": "OREO COFFE MOCHA SOĞUK",
+      "name_norm": "OREO COFFE MOCHA SOGUK",
+      "price": 180,
+      "price_str": "180 TL",
+      "category": "flavored-coffee"
+    },
+    {
+      "name": "LOTUS COFFE MOCHA SICAK",
+      "name_norm": "LOTUS COFFE MOCHA SICAK",
+      "price": 180,
+      "price_str": "180 TL",
+      "category": "flavored-coffee"
+    },
+    {
+      "name": "LOTUS COFFE MOCHA SOĞUK",
+      "name_norm": "LOTUS COFFE MOCHA SOGUK",
+      "price": 180,
+      "price_str": "180 TL",
+      "category": "flavored-coffee"
+    },
+    {
+      "name": "ÇIKOLATAA FRAPPE",
+      "name_norm": "CIKOLATAA FRAPPE",
+      "price": 190,
+      "price_str": "190 TL",
+      "category": "frappe"
+    },
+    {
+      "name": "KARAMELL FRAPPE",
+      "name_norm": "KARAMELL FRAPPE",
+      "price": 190,
+      "price_str": "190 TL",
+      "category": "frappe"
+    },
+    {
+      "name": "VANILYAA FRAPPE",
+      "name_norm": "VANILYAA FRAPPE",
+      "price": 190,
+      "price_str": "190 TL",
+      "category": "frappe"
+    },
+    {
+      "name": "HELL -I QAHWA MENENGIÇ KAHVESI",
+      "name_norm": "HELL I QAHWA MENENGIC KAHVESI",
+      "price": 90,
+      "price_str": "90 TL",
+      "category": "turkish-coffee"
+    },
+    {
+      "name": "KAÇAK ÇAY",
+      "name_norm": "KACAK CAY",
+      "price": 30,
+      "price_str": "30 TL",
+      "category": "turkish-coffee"
+    },
+    {
+      "name": "YERLİ ÇAY",
+      "name_norm": "YERLI CAY",
+      "price": 30,
+      "price_str": "30 TL",
+      "category": "turkish-coffee"
+    },
+    {
+      "name": "KUPA ÇAY",
+      "name_norm": "KUPA CAY",
+      "price": 60,
+      "price_str": "60 TL",
+      "category": "turkish-coffee"
+    },
+    {
+      "name": "FINCAN ÇAY",
+      "name_norm": "FINCAN CAY",
+      "price": 60,
+      "price_str": "60 TL",
+      "category": "turkish-coffee"
+    },
+    {
+      "name": "ATOM ÇAY ŞIFALI BITKI ÇAYLARI",
+      "name_norm": "ATOM CAY SIFALI BITKI CAYLARI",
+      "price": 120,
+      "price_str": "120 TL",
+      "category": "turkish-coffee"
+    },
+    {
+      "name": "KIŞ ÇAYI IHLAMUR",
+      "name_norm": "KIS CAYI IHLAMUR",
+      "price": 120,
+      "price_str": "120 TL",
+      "category": "turkish-coffee"
+    },
+    {
+      "name": "ADAÇAYI",
+      "name_norm": "ADACAYI",
+      "price": 120,
+      "price_str": "120 TL",
+      "category": "turkish-coffee"
+    },
+    {
+      "name": "ZENCEFIL",
+      "name_norm": "ZENCEFIL",
+      "price": 120,
+      "price_str": "120 TL",
+      "category": "turkish-coffee"
+    },
+    {
+      "name": "TARÇIN",
+      "name_norm": "TARCIN",
+      "price": 120,
+      "price_str": "120 TL",
+      "category": "turkish-coffee"
+    },
+    {
+      "name": "KARANFIN",
+      "name_norm": "KARANFIN",
+      "price": 120,
+      "price_str": "120 TL",
+      "category": "turkish-coffee"
+    },
+    {
+      "name": "ANASON",
+      "name_norm": "ANASON",
+      "price": 120,
+      "price_str": "120 TL",
+      "category": "turkish-coffee"
+    },
+    {
+      "name": "ELMA PARÇALI",
+      "name_norm": "ELMA PARCALI",
+      "price": 120,
+      "price_str": "120 TL",
+      "category": "turkish-coffee"
+    },
+    {
+      "name": "ENERJI ÇAYI MATE",
+      "name_norm": "ENERJI CAYI MATE",
+      "price": 120,
+      "price_str": "120 TL",
+      "category": "turkish-coffee"
+    },
+    {
+      "name": "KARANFIL",
+      "name_norm": "KARANFIL",
+      "price": 120,
+      "price_str": "120 TL",
+      "category": "turkish-coffee"
+    },
+    {
+      "name": "HINDISTAN CEVIZI",
+      "name_norm": "HINDISTAN CEVIZI",
+      "price": 120,
+      "price_str": "120 TL",
+      "category": "turkish-coffee"
+    },
+    {
+      "name": "DOĞAL MANGO",
+      "name_norm": "DOGAL MANGO",
+      "price": 120,
+      "price_str": "120 TL",
+      "category": "turkish-coffee"
+    },
+    {
+      "name": "UYKU ÇAYI IHLAMUR",
+      "name_norm": "UYKU CAYI IHLAMUR",
+      "price": 120,
+      "price_str": "120 TL",
+      "category": "turkish-coffee"
+    },
+    {
+      "name": "PAPATYA",
+      "name_norm": "PAPATYA",
+      "price": 120,
+      "price_str": "120 TL",
+      "category": "turkish-coffee"
+    },
+    {
+      "name": "REZENE",
+      "name_norm": "REZENE",
+      "price": 120,
+      "price_str": "120 TL",
+      "category": "turkish-coffee"
+    },
+    {
+      "name": "DOĞAL VANILYA",
+      "name_norm": "DOGAL VANILYA",
+      "price": 120,
+      "price_str": "120 TL",
+      "category": "turkish-coffee"
+    },
+    {
+      "name": "DETOX ÇAYI YESIL ÇAY",
+      "name_norm": "DETOX CAYI YESIL CAY",
+      "price": 120,
+      "price_str": "120 TL",
+      "category": "turkish-coffee"
+    },
+    {
+      "name": "DOĞAL LIMON PARÇALARI",
+      "name_norm": "DOGAL LIMON PARCALARI",
+      "price": 120,
+      "price_str": "120 TL",
+      "category": "turkish-coffee"
+    },
+    {
+      "name": "AVLU BOB MILSHAKE",
+      "name_norm": "AVLU BOB MILSHAKE",
+      "price": 220,
+      "price_str": "220 TL",
+      "category": "milkshake"
+    },
+    {
+      "name": "YABAN MERSISI FROZEN",
+      "name_norm": "YABAN MERSISI FROZEN",
+      "price": 180,
+      "price_str": "180 TL",
+      "category": "frozen"
+    },
+    {
+      "name": "CHURCHILL",
+      "name_norm": "CHURCHILL",
+      "price": 100,
+      "price_str": "100 TL",
+      "category": "smoothie"
+    },
+    {
+      "name": "HAVUÇ SUYU",
+      "name_norm": "HAVUC SUYU",
+      "price": 120,
+      "price_str": "120 TL",
+      "category": "smoothie"
+    },
+    {
+      "name": "ELMA SUYU",
+      "name_norm": "ELMA SUYU",
+      "price": 120,
+      "price_str": "120 TL",
+      "category": "smoothie"
+    },
+    {
+      "name": "PANCAR SUYU",
+      "name_norm": "PANCAR SUYU",
+      "price": 120,
+      "price_str": "120 TL",
+      "category": "smoothie"
+    },
+    {
+      "name": "GEBERTEN ATOM( ALLAH NE VERDIYSE)",
+      "name_norm": "GEBERTEN ATOM ALLAH NE VERDIYSE",
+      "price": 220,
+      "price_str": "220 TL",
+      "category": "smoothie"
+    },
+    {
+      "name": "DETOX NANE",
+      "name_norm": "DETOX NANE",
+      "price": 120,
+      "price_str": "120 TL",
+      "category": "smoothie"
+    },
+    {
+      "name": "MERSİN TOİ KRUVASAN",
+      "name_norm": "MERSIN TOI KRUVASAN",
+      "price": 300,
+      "price_str": "300 TL",
+      "category": "cold"
+    },
+    {
+      "name": "SÜTLÜ KARAMELLI TRİLİÇE",
+      "name_norm": "SUTLU KARAMELLI TRILICE",
+      "price": 190,
+      "price_str": "190 TL",
+      "category": "cold"
+    },
+    {
+      "name": "SANSEBASTIAN QUEENCAKE (ERİTLMİŞ ÇİKOLOTA İLE)",
+      "name_norm": "SANSEBASTIAN QUEENCAKE ERITLMIS CIKOLOTA ILE",
+      "price": 300,
+      "price_str": "300 TL",
+      "category": "cold"
+    },
+    {
+      "name": "ÇİLEKLİ CHEESCAKESS",
+      "name_norm": "CILEKLI CHEESCAKESS",
+      "price": 250,
+      "price_str": "250 TL",
+      "category": "cold"
+    },
+    {
+      "name": "FRAMBUAZLI CHEESCAKE",
+      "name_norm": "FRAMBUAZLI CHEESCAKE",
+      "price": 250,
+      "price_str": "250 TL",
+      "category": "cold"
+    },
+    {
+      "name": "LIMONLU CHEESCAKE",
+      "name_norm": "LIMONLU CHEESCAKE",
+      "price": 250,
+      "price_str": "250 TL",
+      "category": "cold"
+    },
+    {
+      "name": "TARTOLET YUMMY",
+      "name_norm": "TARTOLET YUMMY",
+      "price": 100,
+      "price_str": "100 TL",
+      "category": "cold"
+    },
+    {
+      "name": "CAREMA ECLAIR EKLER",
+      "name_norm": "CAREMA ECLAIR EKLER",
+      "price": 80,
+      "price_str": "80 TL",
+      "category": "cold"
+    },
+    {
+      "name": "PROFITERÖL PUDING",
+      "name_norm": "PROFITEROL PUDING",
+      "price": 170,
+      "price_str": "170 TL",
+      "category": "cold"
+    },
+    {
+      "name": "HMM TİRAMİSU",
+      "name_norm": "HMM TIRAMISU",
+      "price": 200,
+      "price_str": "200 TL",
+      "category": "cold"
+    },
+    {
+      "name": "BROWNIE",
+      "name_norm": "BROWNIE",
+      "price": 90,
+      "price_str": "90 TL",
+      "category": "cold"
+    },
+    {
+      "name": "SUFLE",
+      "name_norm": "SUFLE",
+      "price": 90,
+      "price_str": "90 TL",
+      "category": "cold"
+    },
+    {
+      "name": "AHUDUDU VE YER FISTIKLI NATA",
+      "name_norm": "AHUDUDU VE YER FISTIKLI NATA",
+      "price": 100,
+      "price_str": "100 TL",
+      "category": "cold"
+    },
+    {
+      "name": "WAFFLE",
+      "name_norm": "WAFFLE",
+      "price": 240,
+      "price_str": "240 TL",
+      "category": "cold"
+    },
+    {
+      "name": "KLASIK NATA",
+      "name_norm": "KLASIK NATA",
+      "price": 100,
+      "price_str": "100 TL",
+      "category": "cold"
+    },
+    {
+      "name": "SUCUKLU",
+      "name_norm": "SUCUKLU",
+      "price": 200,
+      "price_str": "200 TL",
+      "category": "cold"
+    },
+    {
+      "name": "KAŞARLI",
+      "name_norm": "KASARLI",
+      "price": 200,
+      "price_str": "200 TL",
+      "category": "cold"
+    },
+    {
+      "name": "KARIŞIK",
+      "name_norm": "KARISIK",
+      "price": 250,
+      "price_str": "250 TL",
+      "category": "cold"
+    },
+    {
+      "name": "THY TOSTU",
+      "name_norm": "THY TOSTU",
+      "price": 130,
+      "price_str": "130 TL",
+      "category": "cold"
+    },
+    {
+      "name": "AYVALIK TOSTU",
+      "name_norm": "AYVALIK TOSTU",
+      "price": 200,
+      "price_str": "200 TL",
+      "category": "cold"
+    },
+    {
+      "name": "MARGARITA",
+      "name_norm": "MARGARITA",
+      "price": 210,
+      "price_str": "210 TL",
+      "category": "cold"
+    },
+    {
+      "name": "SUCUKLU",
+      "name_norm": "SUCUKLU",
+      "price": 210,
+      "price_str": "210 TL",
+      "category": "cold"
+    },
+    {
+      "name": "MANTARLI ZEYTINLI",
+      "name_norm": "MANTARLI ZEYTINLI",
+      "price": 210,
+      "price_str": "210 TL",
+      "category": "cold"
+    },
+    {
+      "name": "SOSISLI MISIRLI",
+      "name_norm": "SOSISLI MISIRLI",
+      "price": 210,
+      "price_str": "210 TL",
+      "category": "cold"
+    },
+    {
+      "name": "KUMRU",
+      "name_norm": "KUMRU",
+      "price": 210,
+      "price_str": "210 TL",
+      "category": "cold"
+    },
+    {
+      "name": "EFSANE 5LI (",
+      "name_norm": "EFSANE 5LI",
+      "price": 230,
+      "price_str": "230 TL",
+      "category": "cold"
+    },
+    {
+      "name": "PARTITERRA",
+      "name_norm": "PARTITERRA",
+      "price": 230,
+      "price_str": "230 TL",
+      "category": "cold"
+    },
+    {
+      "name": "MEKSIKALI",
+      "name_norm": "MEKSIKALI",
+      "price": 230,
+      "price_str": "230 TL",
+      "category": "cold"
+    },
+    {
+      "name": "VEJETARYEN",
+      "name_norm": "VEJETARYEN",
+      "price": 230,
+      "price_str": "230 TL",
+      "category": "cold"
+    },
+    {
+      "name": "BARBEKÜ ÇITIR TAVUKLU",
+      "name_norm": "BARBEKU CITIR TAVUKLU",
+      "price": 230,
+      "price_str": "230 TL",
+      "category": "cold"
+    },
+    {
+      "name": "BOL BOL",
+      "name_norm": "BOL BOL",
+      "price": 245,
+      "price_str": "245 TL",
+      "category": "cold"
+    },
+    {
+      "name": "CHEDDARLI DEV KARIŞIK",
+      "name_norm": "CHEDDARLI DEV KARISIK",
+      "price": 245,
+      "price_str": "245 TL",
+      "category": "cold"
+    },
+    {
+      "name": "ÇITIR TAVUKLU",
+      "name_norm": "CITIR TAVUKLU",
+      "price": 245,
+      "price_str": "245 TL",
+      "category": "cold"
+    },
+    {
+      "name": "BOL ETLI",
+      "name_norm": "BOL ETLI",
+      "price": 245,
+      "price_str": "245 TL",
+      "category": "cold"
+    },
+    {
+      "name": "SWEET CHILI SÜPER SUCUKLU",
+      "name_norm": "SWEET CHILI SUPER SUCUKLU",
+      "price": 245,
+      "price_str": "245 TL",
+      "category": "cold"
+    },
+    {
+      "name": "BOL PEYNIRLI",
+      "name_norm": "BOL PEYNIRLI",
+      "price": 260,
+      "price_str": "260 TL",
+      "category": "cold"
+    },
+    {
+      "name": "PASTIRMALI SUCUKLU",
+      "name_norm": "PASTIRMALI SUCUKLU",
+      "price": 260,
+      "price_str": "260 TL",
+      "category": "cold"
+    },
+    {
+      "name": "KAVURMALI",
+      "name_norm": "KAVURMALI",
+      "price": 260,
+      "price_str": "260 TL",
+      "category": "cold"
+    },
+    {
+      "name": "FÜME KABURGALI",
+      "name_norm": "FUME KABURGALI",
+      "price": 260,
+      "price_str": "260 TL",
+      "category": "cold"
+    },
+    {
+      "name": "PAN PIZZA SUCUKLU",
+      "name_norm": "PAN PIZZA SUCUKLU",
+      "price": 160,
+      "price_str": "160 TL",
+      "category": "cold"
+    },
+    {
+      "name": "PAN PIZZA KARŞIK",
+      "name_norm": "PAN PIZZA KARSIK",
+      "price": 160,
+      "price_str": "160 TL",
+      "category": "cold"
+    },
+    {
+      "name": "4 LÜ NUGGETS",
+      "name_norm": "4 LU NUGGETS",
+      "price": 75,
+      "price_str": "75 TL",
+      "category": "crispy"
+    },
+    {
+      "name": "PATATES KOVASI(450 G)",
+      "name_norm": "PATATES KOVASI450 G",
+      "price": 215,
+      "price_str": "215 TL",
+      "category": "crispy"
+    },
+    {
+      "name": "SADE DONDURMA 1 TOP",
+      "name_norm": "SADE DONDURMA 1 TOP",
+      "price": 30,
+      "price_str": "30 TL",
+      "category": "ice-cream"
+    },
+    {
+      "name": "MEYVELİ DONDURMALAR 1 TOP",
+      "name_norm": "MEYVELI DONDURMALAR 1 TOP",
+      "price": 30,
+      "price_str": "30 TL",
+      "category": "ice-cream"
+    },
+    {
+      "name": "FISTIKLI DONDURMALAR",
+      "name_norm": "FISTIKLI DONDURMALAR",
+      "price": 50,
+      "price_str": "50 TL",
+      "category": "ice-cream"
+    }
+  ],
+  "xlsx_items": [
+    {
+      "name": "DAMLA CAM SU",
+      "name_norm": "DAMLA CAM SU",
+      "price": 50,
+      "price_str": "50 TL",
+      "category": "soft-drinks"
+    },
+    {
+      "name": "DAMLA SU PET",
+      "name_norm": "DAMLA SU PET",
+      "price": 25,
+      "price_str": "25 TL",
+      "category": "soft-drinks"
+    },
+    {
+      "name": "COCO COLA CAM ŞİŞE",
+      "name_norm": "COCO COLA CAM SISE",
+      "price": 85,
+      "price_str": "85 TL",
+      "category": "soft-drinks"
+    },
+    {
+      "name": "COCOLA COLA ZERO CAM",
+      "name_norm": "COCOLA COLA ZERO CAM",
+      "price": 85,
+      "price_str": "85 TL",
+      "category": "soft-drinks"
+    },
+    {
+      "name": "SPRITE CAM ŞIŞE",
+      "name_norm": "SPRITE CAM SISE",
+      "price": 85,
+      "price_str": "85 TL",
+      "category": "soft-drinks"
+    },
+    {
+      "name": "FANTA CAM ŞIŞE",
+      "name_norm": "FANTA CAM SISE",
+      "price": 85,
+      "price_str": "85 TL",
+      "category": "soft-drinks"
+    },
+    {
+      "name": "CAPPY VIŞNE KUTU",
+      "name_norm": "CAPPY VISNE KUTU",
+      "price": 85,
+      "price_str": "85 TL",
+      "category": "soft-drinks"
+    },
+    {
+      "name": "FUCEA TEA LIMONLU,ANANAS,MANGO ŞEFTALI,KARPUZ,KAVUN-ÇILEK",
+      "name_norm": "FUCEA TEA LIMONLUANANASMANGO SEFTALIKARPUZKAVUNCILEK",
+      "price": 85,
+      "price_str": "85 TL",
+      "category": "soft-drinks"
+    },
+    {
+      "name": "SPRITE KUTU",
+      "name_norm": "SPRITE KUTU",
+      "price": 85,
+      "price_str": "85 TL",
+      "category": "soft-drinks"
+    },
+    {
+      "name": "FANTA KUTU",
+      "name_norm": "FANTA KUTU",
+      "price": 85,
+      "price_str": "85 TL",
+      "category": "soft-drinks"
+    },
+    {
+      "name": "COCO COLA KUTU",
+      "name_norm": "COCO COLA KUTU",
+      "price": 85,
+      "price_str": "85 TL",
+      "category": "soft-drinks"
+    },
+    {
+      "name": "COCO COLA ZERO KUTU",
+      "name_norm": "COCO COLA ZERO KUTU",
+      "price": 85,
+      "price_str": "85 TL",
+      "category": "soft-drinks"
+    },
+    {
+      "name": "CAPPY PORTAKAL PARÇACIKLI",
+      "name_norm": "CAPPY PORTAKAL PARCACIKLI",
+      "price": 70,
+      "price_str": "70 TL",
+      "category": "soft-drinks"
+    },
+    {
+      "name": "ESPRESSO",
+      "name_norm": "ESPRESSO",
+      "price": 70,
+      "price_str": "70 TL",
+      "category": "coffee"
+    },
+    {
+      "name": "AFFOGATO",
+      "name_norm": "AFFOGATO",
+      "price": 250,
+      "price_str": "250 TL",
+      "category": "coffee"
+    },
+    {
+      "name": "AMERICANO SICAK",
+      "name_norm": "AMERICANO SICAK",
+      "price": 130,
+      "price_str": "130 TL",
+      "category": "coffee"
+    },
+    {
+      "name": "AMERICANO SOĞUK",
+      "name_norm": "AMERICANO SOGUK",
+      "price": 130,
+      "price_str": "130 TL",
+      "category": "coffee"
+    },
+    {
+      "name": "CORTADO SICAK",
+      "name_norm": "CORTADO SICAK",
+      "price": 180,
+      "price_str": "180 TL",
+      "category": "coffee"
+    },
+    {
+      "name": "CAPPUCCINO SICAK",
+      "name_norm": "CAPPUCCINO SICAK",
+      "price": 170,
+      "price_str": "170 TL",
+      "category": "coffee"
+    },
+    {
+      "name": "FLAT WHITE SICAK",
+      "name_norm": "FLAT WHITE SICAK",
+      "price": 180,
+      "price_str": "180 TL",
+      "category": "coffee"
+    },
+    {
+      "name": "FLAT WHITE SOĞUK",
+      "name_norm": "FLAT WHITE SOGUK",
+      "price": 180,
+      "price_str": "180 TL",
+      "category": "coffee"
+    },
+    {
+      "name": "FILTER COFFEE SICAK",
+      "name_norm": "FILTER COFFEE SICAK",
+      "price": 120,
+      "price_str": "120 TL",
+      "category": "coffee"
+    },
+    {
+      "name": "FILTER COFFEE SOĞUK",
+      "name_norm": "FILTER COFFEE SOGUK",
+      "price": 120,
+      "price_str": "120 TL",
+      "category": "coffee"
+    },
+    {
+      "name": "FİLTER SÜTLÜ SICAK",
+      "name_norm": "FILTER SUTLU SICAK",
+      "price": 135,
+      "price_str": "135 TL",
+      "category": "coffee"
+    },
+    {
+      "name": "FİLTER SÜTLÜ SICAK",
+      "name_norm": "FILTER SUTLU SICAK",
+      "price": 135,
+      "price_str": "135 TL",
+      "category": "coffee"
+    },
+    {
+      "name": "CARAMEL COFFE LATTE SOĞUK",
+      "name_norm": "CARAMEL COFFE LATTE SOGUK",
+      "price": 170,
+      "price_str": "170 TL",
+      "category": "flavored-coffee"
+    },
+    {
+      "name": "CARAMEL COFFE LATTE SICAK",
+      "name_norm": "CARAMEL COFFE LATTE SICAK",
+      "price": 170,
+      "price_str": "170 TL",
+      "category": "flavored-coffee"
+    },
+    {
+      "name": "COFFE LATTE SICAK",
+      "name_norm": "COFFE LATTE SICAK",
+      "price": 160,
+      "price_str": "160 TL",
+      "category": "flavored-coffee"
+    },
+    {
+      "name": "COFFE LATTE SOĞUK",
+      "name_norm": "COFFE LATTE SOGUK",
+      "price": 160,
+      "price_str": "160 TL",
+      "category": "flavored-coffee"
+    },
+    {
+      "name": "VANİLLA COFFE LATTE SICAK",
+      "name_norm": "VANILLA COFFE LATTE SICAK",
+      "price": 170,
+      "price_str": "170 TL",
+      "category": "flavored-coffee"
+    },
+    {
+      "name": "VANİLLA COFFE LATTE SOĞUK",
+      "name_norm": "VANILLA COFFE LATTE SOGUK",
+      "price": 170,
+      "price_str": "170 TL",
+      "category": "flavored-coffee"
+    },
+    {
+      "name": "ANTEP FISTIKLI COFFE LATTE SICAK",
+      "name_norm": "ANTEP FISTIKLI COFFE LATTE SICAK",
+      "price": 170,
+      "price_str": "170 TL",
+      "category": "flavored-coffee"
+    },
+    {
+      "name": "ANTEP FISTIKLI COFFE LATTE SOĞUK",
+      "name_norm": "ANTEP FISTIKLI COFFE LATTE SOGUK",
+      "price": 170,
+      "price_str": "170 TL",
+      "category": "flavored-coffee"
+    },
+    {
+      "name": "TAHİNİ COFFE LATTE SICAK",
+      "name_norm": "TAHINI COFFE LATTE SICAK",
+      "price": 170,
+      "price_str": "170 TL",
+      "category": "flavored-coffee"
+    },
+    {
+      "name": "TAHİNİ COFFE LATTE SOĞUK",
+      "name_norm": "TAHINI COFFE LATTE SOGUK",
+      "price": 170,
+      "price_str": "170 TL",
+      "category": "flavored-coffee"
+    },
+    {
+      "name": "SÜTLÜ REÇELLİ LATTE SICAK",
+      "name_norm": "SUTLU RECELLI LATTE SICAK",
+      "price": 170,
+      "price_str": "170 TL",
+      "category": "flavored-coffee"
+    },
+    {
+      "name": "SÜTLÜ REÇELLİ LATTE SOĞUK",
+      "name_norm": "SUTLU RECELLI LATTE SOGUK",
+      "price": 170,
+      "price_str": "170 TL",
+      "category": "flavored-coffee"
+    },
+    {
+      "name": "MEDJOOL HURMA COFFE LATTE SICAK",
+      "name_norm": "MEDJOOL HURMA COFFE LATTE SICAK",
+      "price": 170,
+      "price_str": "170 TL",
+      "category": "flavored-coffee"
+    },
+    {
+      "name": "MEDJOOL HURMA LATTE COFFE SOĞUK",
+      "name_norm": "MEDJOOL HURMA LATTE COFFE SOGUK",
+      "price": 170,
+      "price_str": "170 TL",
+      "category": "flavored-coffee"
+    },
+    {
+      "name": "COFFE MOCHA SOĞUK",
+      "name_norm": "COFFE MOCHA SOGUK",
+      "price": 170,
+      "price_str": "170 TL",
+      "category": "flavored-coffee"
+    },
+    {
+      "name": "COFFE CARAMEL SOĞUK MOCHA",
+      "name_norm": "COFFE CARAMEL SOGUK MOCHA",
+      "price": 180,
+      "price_str": "180 TL",
+      "category": "flavored-coffee"
+    },
+    {
+      "name": "COFFE CARAMEL SICAK MOCHA",
+      "name_norm": "COFFE CARAMEL SICAK MOCHA",
+      "price": 180,
+      "price_str": "180 TL",
+      "category": "flavored-coffee"
+    },
+    {
+      "name": "COFFE WHITE MOCHA SICAK",
+      "name_norm": "COFFE WHITE MOCHA SICAK",
+      "price": 180,
+      "price_str": "180 TL",
+      "category": "flavored-coffee"
+    },
+    {
+      "name": "COFFE WHITE MOCHA SOĞUK",
+      "name_norm": "COFFE WHITE MOCHA SOGUK",
+      "price": 180,
+      "price_str": "180 TL",
+      "category": "flavored-coffee"
+    },
+    {
+      "name": "OREO COFFE MOCHA SICAK",
+      "name_norm": "OREO COFFE MOCHA SICAK",
+      "price": 180,
+      "price_str": "180 TL",
+      "category": "flavored-coffee"
+    },
+    {
+      "name": "OREO COFFE MOCHA SOĞUK",
+      "name_norm": "OREO COFFE MOCHA SOGUK",
+      "price": 180,
+      "price_str": "180 TL",
+      "category": "flavored-coffee"
+    },
+    {
+      "name": "LOTUS COFFE MOCHA SICAK",
+      "name_norm": "LOTUS COFFE MOCHA SICAK",
+      "price": 180,
+      "price_str": "180 TL",
+      "category": "flavored-coffee"
+    },
+    {
+      "name": "LOTUS COFFE MOCHA SOĞUK",
+      "name_norm": "LOTUS COFFE MOCHA SOGUK",
+      "price": 180,
+      "price_str": "180 TL",
+      "category": "flavored-coffee"
+    },
+    {
+      "name": "CLASSIC FRAPPE",
+      "name_norm": "CLASSIC FRAPPE",
+      "price": 180,
+      "price_str": "180 TL",
+      "category": "frappe"
+    },
+    {
+      "name": "SÜTLÜ FRAPPE",
+      "name_norm": "SUTLU FRAPPE",
+      "price": 180,
+      "price_str": "180 TL",
+      "category": "frappe"
+    },
+    {
+      "name": "ÇIKOLATAA FRAPPE",
+      "name_norm": "CIKOLATAA FRAPPE",
+      "price": 190,
+      "price_str": "190 TL",
+      "category": "frappe"
+    },
+    {
+      "name": "KARAMELL FRAPPE",
+      "name_norm": "KARAMELL FRAPPE",
+      "price": 190,
+      "price_str": "190 TL",
+      "category": "frappe"
+    },
+    {
+      "name": "VANILYAA FRAPPE",
+      "name_norm": "VANILYAA FRAPPE",
+      "price": 190,
+      "price_str": "190 TL",
+      "category": "frappe"
+    },
+    {
+      "name": "OREO FRAPPE",
+      "name_norm": "OREO FRAPPE",
+      "price": 190,
+      "price_str": "190 TL",
+      "category": "frappe"
+    },
+    {
+      "name": "LOTUS FRAPPE",
+      "name_norm": "LOTUS FRAPPE",
+      "price": 190,
+      "price_str": "190 TL",
+      "category": "frappe"
+    },
+    {
+      "name": "TÜRK KAHVESI",
+      "name_norm": "TURK KAHVESI",
+      "price": 90,
+      "price_str": "90 TL",
+      "category": "turkish-coffee"
+    },
+    {
+      "name": "SÜVARI TÜRK KAHVESI",
+      "name_norm": "SUVARI TURK KAHVESI",
+      "price": 120,
+      "price_str": "120 TL",
+      "category": "turkish-coffee"
+    },
+    {
+      "name": "DAMLA SAKIZLI TÜRK KAHVESI",
+      "name_norm": "DAMLA SAKIZLI TURK KAHVESI",
+      "price": 120,
+      "price_str": "120 TL",
+      "category": "turkish-coffee"
+    },
+    {
+      "name": "OSMANLI DIBEK TÜRK KAHVESI",
+      "name_norm": "OSMANLI DIBEK TURK KAHVESI",
+      "price": 120,
+      "price_str": "120 TL",
+      "category": "turkish-coffee"
+    },
+    {
+      "name": "HELL -I QAHWA MENENGIÇ KAHVESI",
+      "name_norm": "HELL I QAHWA MENENGIC KAHVESI",
+      "price": 90,
+      "price_str": "90 TL",
+      "category": "turkish-coffee"
+    },
+    {
+      "name": "DAĞ ÇILEKLI TÜRK KAHVESI",
+      "name_norm": "DAG CILEKLI TURK KAHVESI",
+      "price": 120,
+      "price_str": "120 TL",
+      "category": "turkish-coffee"
+    },
+    {
+      "name": "KAÇAK ÇAY",
+      "name_norm": "KACAK CAY",
+      "price": 30,
+      "price_str": "30 TL",
+      "category": "turkish-coffee"
+    },
+    {
+      "name": "YERLİ ÇAY",
+      "name_norm": "YERLI CAY",
+      "price": 30,
+      "price_str": "30 TL",
+      "category": "turkish-coffee"
+    },
+    {
+      "name": "KUPA ÇAY",
+      "name_norm": "KUPA CAY",
+      "price": 60,
+      "price_str": "60 TL",
+      "category": "turkish-coffee"
+    },
+    {
+      "name": "FINCAN ÇAY",
+      "name_norm": "FINCAN CAY",
+      "price": 60,
+      "price_str": "60 TL",
+      "category": "turkish-coffee"
+    },
+    {
+      "name": "ATOM ÇAY ŞIFALI BITKI ÇAYLARI",
+      "name_norm": "ATOM CAY SIFALI BITKI CAYLARI",
+      "price": 120,
+      "price_str": "120 TL",
+      "category": "turkish-coffee"
+    },
+    {
+      "name": "KIŞ ÇAYI IHLAMUR",
+      "name_norm": "KIS CAYI IHLAMUR",
+      "price": 120,
+      "price_str": "120 TL",
+      "category": "turkish-coffee"
+    },
+    {
+      "name": "ADAÇAYI",
+      "name_norm": "ADACAYI",
+      "price": 120,
+      "price_str": "120 TL",
+      "category": "turkish-coffee"
+    },
+    {
+      "name": "ZENCEFIL",
+      "name_norm": "ZENCEFIL",
+      "price": 120,
+      "price_str": "120 TL",
+      "category": "turkish-coffee"
+    },
+    {
+      "name": "TARÇIN",
+      "name_norm": "TARCIN",
+      "price": 120,
+      "price_str": "120 TL",
+      "category": "turkish-coffee"
+    },
+    {
+      "name": "KARANFIN",
+      "name_norm": "KARANFIN",
+      "price": 120,
+      "price_str": "120 TL",
+      "category": "turkish-coffee"
+    },
+    {
+      "name": "ANASON",
+      "name_norm": "ANASON",
+      "price": 120,
+      "price_str": "120 TL",
+      "category": "turkish-coffee"
+    },
+    {
+      "name": "ELMA PARÇALI",
+      "name_norm": "ELMA PARCALI",
+      "price": 120,
+      "price_str": "120 TL",
+      "category": "turkish-coffee"
+    },
+    {
+      "name": "ENERJI ÇAYI MATE",
+      "name_norm": "ENERJI CAYI MATE",
+      "price": 120,
+      "price_str": "120 TL",
+      "category": "turkish-coffee"
+    },
+    {
+      "name": "KARANFIL",
+      "name_norm": "KARANFIL",
+      "price": 120,
+      "price_str": "120 TL",
+      "category": "turkish-coffee"
+    },
+    {
+      "name": "HINDISTAN CEVIZI",
+      "name_norm": "HINDISTAN CEVIZI",
+      "price": 120,
+      "price_str": "120 TL",
+      "category": "turkish-coffee"
+    },
+    {
+      "name": "DOĞAL MANGO",
+      "name_norm": "DOGAL MANGO",
+      "price": 120,
+      "price_str": "120 TL",
+      "category": "turkish-coffee"
+    },
+    {
+      "name": "UYKU ÇAYI IHLAMUR",
+      "name_norm": "UYKU CAYI IHLAMUR",
+      "price": 120,
+      "price_str": "120 TL",
+      "category": "turkish-coffee"
+    },
+    {
+      "name": "PAPATYA",
+      "name_norm": "PAPATYA",
+      "price": 120,
+      "price_str": "120 TL",
+      "category": "turkish-coffee"
+    },
+    {
+      "name": "REZENE",
+      "name_norm": "REZENE",
+      "price": 120,
+      "price_str": "120 TL",
+      "category": "turkish-coffee"
+    },
+    {
+      "name": "DOĞAL VANILYA",
+      "name_norm": "DOGAL VANILYA",
+      "price": 120,
+      "price_str": "120 TL",
+      "category": "turkish-coffee"
+    },
+    {
+      "name": "DETOX ÇAYI YESIL ÇAY",
+      "name_norm": "DETOX CAYI YESIL CAY",
+      "price": 120,
+      "price_str": "120 TL",
+      "category": "turkish-coffee"
+    },
+    {
+      "name": "DOĞAL LIMON PARÇALARI",
+      "name_norm": "DOGAL LIMON PARCALARI",
+      "price": 120,
+      "price_str": "120 TL",
+      "category": "turkish-coffee"
+    },
+    {
+      "name": "ÇILEK DONDURMALI MILKSHAKE",
+      "name_norm": "CILEK DONDURMALI MILKSHAKE",
+      "price": 220,
+      "price_str": "220 TL",
+      "category": "milkshake"
+    },
+    {
+      "name": "ÇIKOLATA DONDURMALI MILKSHAKE",
+      "name_norm": "CIKOLATA DONDURMALI MILKSHAKE",
+      "price": 220,
+      "price_str": "220 TL",
+      "category": "milkshake"
+    },
+    {
+      "name": "ANTEP FISTIK DONDURMALI MILKSHAKE",
+      "name_norm": "ANTEP FISTIK DONDURMALI MILKSHAKE",
+      "price": 220,
+      "price_str": "220 TL",
+      "category": "milkshake"
+    },
+    {
+      "name": "AVLUTELLA NUTELLA ÇIKOLATA MİLKSHAKE",
+      "name_norm": "AVLUTELLA NUTELLA CIKOLATA MILKSHAKE",
+      "price": 220,
+      "price_str": "220 TL",
+      "category": "milkshake"
+    },
+    {
+      "name": "LIMON DONDURMALI MILKSHAKE",
+      "name_norm": "LIMON DONDURMALI MILKSHAKE",
+      "price": 220,
+      "price_str": "220 TL",
+      "category": "milkshake"
+    },
+    {
+      "name": "VANILYA DONDURMALI MILKSHAKE",
+      "name_norm": "VANILYA DONDURMALI MILKSHAKE",
+      "price": 220,
+      "price_str": "220 TL",
+      "category": "milkshake"
+    },
+    {
+      "name": "DONDURMANI KENDIN SEÇ MILKSHAKE",
+      "name_norm": "DONDURMANI KENDIN SEC MILKSHAKE",
+      "price": 220,
+      "price_str": "220 TL",
+      "category": "milkshake"
+    },
+    {
+      "name": "AVLU BOB MILSHAKE",
+      "name_norm": "AVLU BOB MILSHAKE",
+      "price": 220,
+      "price_str": "220 TL",
+      "category": "milkshake"
+    },
+    {
+      "name": "LİMON FROZEN",
+      "name_norm": "LIMON FROZEN",
+      "price": 180,
+      "price_str": "180 TL",
+      "category": "frozen"
+    },
+    {
+      "name": "ŞEFTALİ FROZEN",
+      "name_norm": "SEFTALI FROZEN",
+      "price": 180,
+      "price_str": "180 TL",
+      "category": "frozen"
+    },
+    {
+      "name": "KIRMIZI ORMAN MEYVELI FROZEN",
+      "name_norm": "KIRMIZI ORMAN MEYVELI FROZEN",
+      "price": 180,
+      "price_str": "180 TL",
+      "category": "frozen"
+    },
+    {
+      "name": "BÖGÜRTLEN FROZEN",
+      "name_norm": "BOGURTLEN FROZEN",
+      "price": 180,
+      "price_str": "180 TL",
+      "category": "frozen"
+    },
+    {
+      "name": "ÇİLEK FROZEN",
+      "name_norm": "CILEK FROZEN",
+      "price": 180,
+      "price_str": "180 TL",
+      "category": "frozen"
+    },
+    {
+      "name": "KARADUT FROZEN",
+      "name_norm": "KARADUT FROZEN",
+      "price": 180,
+      "price_str": "180 TL",
+      "category": "frozen"
+    },
+    {
+      "name": "YABAN MERSISI FROZEN",
+      "name_norm": "YABAN MERSISI FROZEN",
+      "price": 180,
+      "price_str": "180 TL",
+      "category": "frozen"
+    },
+    {
+      "name": "SARI BAHÇE MEYVELI SMOOTHIES",
+      "name_norm": "SARI BAHCE MEYVELI SMOOTHIES",
+      "price": 200,
+      "price_str": "200 TL",
+      "category": "smoothie"
+    },
+    {
+      "name": "KIRMIZI ORMAN MEYVELI SMOOTHIES",
+      "name_norm": "KIRMIZI ORMAN MEYVELI SMOOTHIES",
+      "price": 200,
+      "price_str": "200 TL",
+      "category": "smoothie"
+    },
+    {
+      "name": "CHURCHILL",
+      "name_norm": "CHURCHILL",
+      "price": 100,
+      "price_str": "100 TL",
+      "category": "smoothie"
+    },
+    {
+      "name": "HAVUÇ SUYU",
+      "name_norm": "HAVUC SUYU",
+      "price": 120,
+      "price_str": "120 TL",
+      "category": "smoothie"
+    },
+    {
+      "name": "ELMA SUYU",
+      "name_norm": "ELMA SUYU",
+      "price": 120,
+      "price_str": "120 TL",
+      "category": "smoothie"
+    },
+    {
+      "name": "PANCAR SUYU",
+      "name_norm": "PANCAR SUYU",
+      "price": 120,
+      "price_str": "120 TL",
+      "category": "smoothie"
+    },
+    {
+      "name": "GEBERTEN ATOM( ALLAH NE VERDIYSE)",
+      "name_norm": "GEBERTEN ATOM ALLAH NE VERDIYSE",
+      "price": 220,
+      "price_str": "220 TL",
+      "category": "smoothie"
+    },
+    {
+      "name": "DETOX NANE",
+      "name_norm": "DETOX NANE",
+      "price": 120,
+      "price_str": "120 TL",
+      "category": "smoothie"
+    },
+    {
+      "name": "BERRY HIBISCUS",
+      "name_norm": "BERRY HIBISCUS",
+      "price": 120,
+      "price_str": "120 TL",
+      "category": "mocktail"
+    },
+    {
+      "name": "COOL LIME",
+      "name_norm": "COOL LIME",
+      "price": 150,
+      "price_str": "150 TL",
+      "category": "mocktail"
+    },
+    {
+      "name": "BUBBLE TEA ÇILEK",
+      "name_norm": "BUBBLE TEA CILEK",
+      "price": 200,
+      "price_str": "200 TL",
+      "category": "mocktail"
+    },
+    {
+      "name": "PİNK MOJITO",
+      "name_norm": "PINK MOJITO",
+      "price": 230,
+      "price_str": "230 TL",
+      "category": "mocktail"
+    },
+    {
+      "name": "WHİTE MOJITO",
+      "name_norm": "WHITE MOJITO",
+      "price": 230,
+      "price_str": "230 TL",
+      "category": "mocktail"
+    },
+    {
+      "name": "CLASSIC MOJITO",
+      "name_norm": "CLASSIC MOJITO",
+      "price": 230,
+      "price_str": "230 TL",
+      "category": "mocktail"
+    },
+    {
+      "name": "AVLU SUNSET KARAMEL SURUP",
+      "name_norm": "AVLU SUNSET KARAMEL SURUP",
+      "price": 230,
+      "price_str": "230 TL",
+      "category": "mocktail"
+    },
+    {
+      "name": "KILIS BAHÇASI EGZOTIK LIMON OTU",
+      "name_norm": "KILIS BAHCASI EGZOTIK LIMON OTU",
+      "price": 230,
+      "price_str": "230 TL",
+      "category": "mocktail"
+    },
+    {
+      "name": "KUZU KULAĞI",
+      "name_norm": "KUZU KULAGI",
+      "price": 230,
+      "price_str": "230 TL",
+      "category": "mocktail"
+    },
+    {
+      "name": "EVDE YAPTIK LIMONATA",
+      "name_norm": "EVDE YAPTIK LIMONATA",
+      "price": 90,
+      "price_str": "90 TL",
+      "category": "lemonade-bar"
+    },
+    {
+      "name": "ÇILEK LIMONATA",
+      "name_norm": "CILEK LIMONATA",
+      "price": 100,
+      "price_str": "100 TL",
+      "category": "lemonade-bar"
+    },
+    {
+      "name": "GÜL LIMONATA",
+      "name_norm": "GUL LIMONATA",
+      "price": 100,
+      "price_str": "100 TL",
+      "category": "lemonade-bar"
+    },
+    {
+      "name": "BOTANIK BAHÇE LIMONATA",
+      "name_norm": "BOTANIK BAHCE LIMONATA",
+      "price": 100,
+      "price_str": "100 TL",
+      "category": "lemonade-bar"
+    },
+    {
+      "name": "İCE MATCHA LATTE",
+      "name_norm": "ICE MATCHA LATTE",
+      "price": 180,
+      "price_str": "180 TL",
+      "category": "matcha"
+    },
+    {
+      "name": "İCE MATCHA VANILLA LATTE",
+      "name_norm": "ICE MATCHA VANILLA LATTE",
+      "price": 180,
+      "price_str": "180 TL",
+      "category": "matcha"
+    },
+    {
+      "name": "İCE STRAWBERRY MATCHA LATTE",
+      "name_norm": "ICE STRAWBERRY MATCHA LATTE",
+      "price": 180,
+      "price_str": "180 TL",
+      "category": "matcha"
+    },
+    {
+      "name": "İCE COCO MATCHA LATTE",
+      "name_norm": "ICE COCO MATCHA LATTE",
+      "price": 180,
+      "price_str": "180 TL",
+      "category": "matcha"
+    },
+    {
+      "name": "İCE CARAMEL BANANA CREAM MATCHA",
+      "name_norm": "ICE CARAMEL BANANA CREAM MATCHA",
+      "price": 180,
+      "price_str": "180 TL",
+      "category": "matcha"
+    },
+    {
+      "name": "MERSİN TOİ KRUVASAN",
+      "name_norm": "MERSIN TOI KRUVASAN",
+      "price": 300,
+      "price_str": "300 TL",
+      "category": "cold"
+    },
+    {
+      "name": "SÜTLÜ KARAMELLI TRİLİÇE",
+      "name_norm": "SUTLU KARAMELLI TRILICE",
+      "price": 190,
+      "price_str": "190 TL",
+      "category": "cold"
+    },
+    {
+      "name": "SANSEBASTIAN QUEENCAKE (ERİTLMİŞ ÇİKOLOTA İLE)",
+      "name_norm": "SANSEBASTIAN QUEENCAKE ERITLMIS CIKOLOTA ILE",
+      "price": 300,
+      "price_str": "300 TL",
+      "category": "cold"
+    },
+    {
+      "name": "ÇİLEKLİ CHEESCAKESS",
+      "name_norm": "CILEKLI CHEESCAKESS",
+      "price": 250,
+      "price_str": "250 TL",
+      "category": "cold"
+    },
+    {
+      "name": "FRAMBUAZLI CHEESCAKE",
+      "name_norm": "FRAMBUAZLI CHEESCAKE",
+      "price": 250,
+      "price_str": "250 TL",
+      "category": "cold"
+    },
+    {
+      "name": "LIMONLU CHEESCAKE",
+      "name_norm": "LIMONLU CHEESCAKE",
+      "price": 250,
+      "price_str": "250 TL",
+      "category": "cold"
+    },
+    {
+      "name": "TARTOLET YUMMY",
+      "name_norm": "TARTOLET YUMMY",
+      "price": 100,
+      "price_str": "100 TL",
+      "category": "cold"
+    },
+    {
+      "name": "CAREMA ECLAIR EKLER",
+      "name_norm": "CAREMA ECLAIR EKLER",
+      "price": 80,
+      "price_str": "80 TL",
+      "category": "cold"
+    },
+    {
+      "name": "PROFITERÖL PUDING",
+      "name_norm": "PROFITEROL PUDING",
+      "price": 170,
+      "price_str": "170 TL",
+      "category": "cold"
+    },
+    {
+      "name": "HMM TİRAMİSU",
+      "name_norm": "HMM TIRAMISU",
+      "price": 200,
+      "price_str": "200 TL",
+      "category": "cold"
+    },
+    {
+      "name": "BROWNIE",
+      "name_norm": "BROWNIE",
+      "price": 90,
+      "price_str": "90 TL",
+      "category": "cold"
+    },
+    {
+      "name": "SUFLE",
+      "name_norm": "SUFLE",
+      "price": 90,
+      "price_str": "90 TL",
+      "category": "cold"
+    },
+    {
+      "name": "AHUDUDU VE YER FISTIKLI NATA",
+      "name_norm": "AHUDUDU VE YER FISTIKLI NATA",
+      "price": 100,
+      "price_str": "100 TL",
+      "category": "cold"
+    },
+    {
+      "name": "WAFFLE",
+      "name_norm": "WAFFLE",
+      "price": 240,
+      "price_str": "240 TL",
+      "category": "cold"
+    },
+    {
+      "name": "KLASIK NATA",
+      "name_norm": "KLASIK NATA",
+      "price": 100,
+      "price_str": "100 TL",
+      "category": "cold"
+    },
+    {
+      "name": "SUCUKLU",
+      "name_norm": "SUCUKLU",
+      "price": 200,
+      "price_str": "200 TL",
+      "category": "cold"
+    },
+    {
+      "name": "KAŞARLI",
+      "name_norm": "KASARLI",
+      "price": 200,
+      "price_str": "200 TL",
+      "category": "cold"
+    },
+    {
+      "name": "KARIŞIK",
+      "name_norm": "KARISIK",
+      "price": 250,
+      "price_str": "250 TL",
+      "category": "cold"
+    },
+    {
+      "name": "THY TOSTU",
+      "name_norm": "THY TOSTU",
+      "price": 130,
+      "price_str": "130 TL",
+      "category": "cold"
+    },
+    {
+      "name": "AYVALIK TOSTU",
+      "name_norm": "AYVALIK TOSTU",
+      "price": 200,
+      "price_str": "200 TL",
+      "category": "cold"
+    },
+    {
+      "name": "MARGARITA",
+      "name_norm": "MARGARITA",
+      "price": 210,
+      "price_str": "210 TL",
+      "category": "cold"
+    },
+    {
+      "name": "SUCUKLU",
+      "name_norm": "SUCUKLU",
+      "price": 210,
+      "price_str": "210 TL",
+      "category": "cold"
+    },
+    {
+      "name": "MANTARLI ZEYTINLI",
+      "name_norm": "MANTARLI ZEYTINLI",
+      "price": 210,
+      "price_str": "210 TL",
+      "category": "cold"
+    },
+    {
+      "name": "SOSISLI MISIRLI",
+      "name_norm": "SOSISLI MISIRLI",
+      "price": 210,
+      "price_str": "210 TL",
+      "category": "cold"
+    },
+    {
+      "name": "KUMRU",
+      "name_norm": "KUMRU",
+      "price": 210,
+      "price_str": "210 TL",
+      "category": "cold"
+    },
+    {
+      "name": "EFSANE 5LI (",
+      "name_norm": "EFSANE 5LI",
+      "price": 230,
+      "price_str": "230 TL",
+      "category": "cold"
+    },
+    {
+      "name": "PARTITERRA",
+      "name_norm": "PARTITERRA",
+      "price": 230,
+      "price_str": "230 TL",
+      "category": "cold"
+    },
+    {
+      "name": "MEKSIKALI",
+      "name_norm": "MEKSIKALI",
+      "price": 230,
+      "price_str": "230 TL",
+      "category": "cold"
+    },
+    {
+      "name": "VEJETARYEN",
+      "name_norm": "VEJETARYEN",
+      "price": 230,
+      "price_str": "230 TL",
+      "category": "cold"
+    },
+    {
+      "name": "BARBEKÜ ÇITIR TAVUKLU",
+      "name_norm": "BARBEKU CITIR TAVUKLU",
+      "price": 230,
+      "price_str": "230 TL",
+      "category": "cold"
+    },
+    {
+      "name": "BOL BOL",
+      "name_norm": "BOL BOL",
+      "price": 245,
+      "price_str": "245 TL",
+      "category": "cold"
+    },
+    {
+      "name": "CHEDDARLI DEV KARIŞIK",
+      "name_norm": "CHEDDARLI DEV KARISIK",
+      "price": 245,
+      "price_str": "245 TL",
+      "category": "cold"
+    },
+    {
+      "name": "ÇITIR TAVUKLU",
+      "name_norm": "CITIR TAVUKLU",
+      "price": 245,
+      "price_str": "245 TL",
+      "category": "cold"
+    },
+    {
+      "name": "BOL ETLI",
+      "name_norm": "BOL ETLI",
+      "price": 245,
+      "price_str": "245 TL",
+      "category": "cold"
+    },
+    {
+      "name": "SWEET CHILI SÜPER SUCUKLU",
+      "name_norm": "SWEET CHILI SUPER SUCUKLU",
+      "price": 245,
+      "price_str": "245 TL",
+      "category": "cold"
+    },
+    {
+      "name": "BOL PEYNIRLI",
+      "name_norm": "BOL PEYNIRLI",
+      "price": 260,
+      "price_str": "260 TL",
+      "category": "cold"
+    },
+    {
+      "name": "PASTIRMALI SUCUKLU",
+      "name_norm": "PASTIRMALI SUCUKLU",
+      "price": 260,
+      "price_str": "260 TL",
+      "category": "cold"
+    },
+    {
+      "name": "KAVURMALI",
+      "name_norm": "KAVURMALI",
+      "price": 260,
+      "price_str": "260 TL",
+      "category": "cold"
+    },
+    {
+      "name": "FÜME KABURGALI",
+      "name_norm": "FUME KABURGALI",
+      "price": 260,
+      "price_str": "260 TL",
+      "category": "cold"
+    },
+    {
+      "name": "PAN PIZZA SUCUKLU",
+      "name_norm": "PAN PIZZA SUCUKLU",
+      "price": 160,
+      "price_str": "160 TL",
+      "category": "cold"
+    },
+    {
+      "name": "PAN PIZZA KARŞIK",
+      "name_norm": "PAN PIZZA KARSIK",
+      "price": 160,
+      "price_str": "160 TL",
+      "category": "cold"
+    },
+    {
+      "name": "COMBO MENÜ",
+      "name_norm": "COMBO MENU",
+      "price": 240,
+      "price_str": "240 TL",
+      "category": "menus"
+    },
+    {
+      "name": "ÖZEL MENÜ",
+      "name_norm": "OZEL MENU",
+      "price": 325,
+      "price_str": "325 TL",
+      "category": "menus"
+    },
+    {
+      "name": "ŞAMPIYON MENÜ",
+      "name_norm": "SAMPIYON MENU",
+      "price": 390,
+      "price_str": "390 TL",
+      "category": "menus"
+    },
+    {
+      "name": "TAVUKLU MISIRLI(patates,çocuk pizza, ayran)",
+      "name_norm": "TAVUKLU MISIRLIPATATESCOCUK PIZZA AYRAN",
+      "price": 205,
+      "price_str": "205 TL",
+      "category": "kids"
+    },
+    {
+      "name": "SOSİSLİ MISIRLI(patates,çocuk pizza,ayran)",
+      "name_norm": "SOSISLI MISIRLIPATATESCOCUK PIZZAAYRAN",
+      "price": 205,
+      "price_str": "205 TL",
+      "category": "kids"
+    },
+    {
+      "name": "PARMAK PATATES",
+      "name_norm": "PARMAK PATATES",
+      "price": 75,
+      "price_str": "75 TL",
+      "category": "crispy"
+    },
+    {
+      "name": "10LU SOĞAN HALKASI",
+      "name_norm": "10LU SOGAN HALKASI",
+      "price": 75,
+      "price_str": "75 TL",
+      "category": "crispy"
+    },
+    {
+      "name": "10LU ÇITIR TOPLARI",
+      "name_norm": "10LU CITIR TOPLARI",
+      "price": 75,
+      "price_str": "75 TL",
+      "category": "crispy"
+    },
+    {
+      "name": "4 LÜ NUGGETS",
+      "name_norm": "4 LU NUGGETS",
+      "price": 75,
+      "price_str": "75 TL",
+      "category": "crispy"
+    },
+    {
+      "name": "4LÜ TAVUK GÖĞÜS PARÇALARI",
+      "name_norm": "4LU TAVUK GOGUS PARCALARI",
+      "price": 75,
+      "price_str": "75 TL",
+      "category": "crispy"
+    },
+    {
+      "name": "3LÜ CHICKEN FINGERS",
+      "name_norm": "3LU CHICKEN FINGERS",
+      "price": 95,
+      "price_str": "95 TL",
+      "category": "crispy"
+    },
+    {
+      "name": "4LÜ ÇITIR PEYNIR ÇUBUKLARI",
+      "name_norm": "4LU CITIR PEYNIR CUBUKLARI",
+      "price": 84,
+      "price_str": "84 TL",
+      "category": "crispy"
+    },
+    {
+      "name": "ÇITIR KUTUSU(425G) 1.5 porsiyon parmak patates,4'lü tavuk göğüs parçaları, 2'li chicken fingers, 4'lü soğan halkası",
+      "name_norm": "CITIR KUTUSU425G 15 PORSIYON PARMAK PATATES4LU TAVUK GOGUS PARCALARI 2LI CHICKEN FINGERS 4LU SOGAN HALKASI",
+      "price": 145,
+      "price_str": "145 TL",
+      "category": "crispy"
+    },
+    {
+      "name": "PATATES KOVASI(450 G)",
+      "name_norm": "PATATES KOVASI450 G",
+      "price": 215,
+      "price_str": "215 TL",
+      "category": "crispy"
+    },
+    {
+      "name": "ÇITIR KOVASI :1,5 PORSIYON PARMAK PATATES, 4LÜ TAVUK GÖĞÜS PARÇALARI, 2LI CHICKEN FINGERS, 4LÜ SOĞAN HALKASI",
+      "name_norm": "CITIR KOVASI 15 PORSIYON PARMAK PATATES 4LU TAVUK GOGUS PARCALARI 2LI CHICKEN FINGERS 4LU SOGAN HALKASI",
+      "price": 265,
+      "price_str": "265 TL",
+      "category": "crispy"
+    },
+    {
+      "name": "TAVUK KOVASI: CHICKEN FINGERS, 4LÜ TAVUK GÖĞÜS PARÇLARI",
+      "name_norm": "TAVUK KOVASI CHICKEN FINGERS 4LU TAVUK GOGUS PARCLARI",
+      "price": 265,
+      "price_str": "265 TL",
+      "category": "crispy"
+    },
+    {
+      "name": "SADE DONDURMA 1 TOP",
+      "name_norm": "SADE DONDURMA 1 TOP",
+      "price": 30,
+      "price_str": "30 TL",
+      "category": "ice-cream"
+    },
+    {
+      "name": "MEYVELİ DONDURMALAR 1 TOP",
+      "name_norm": "MEYVELI DONDURMALAR 1 TOP",
+      "price": 30,
+      "price_str": "30 TL",
+      "category": "ice-cream"
+    },
+    {
+      "name": "FISTIKLI DONDURMALAR",
+      "name_norm": "FISTIKLI DONDURMALAR",
+      "price": 50,
+      "price_str": "50 TL",
+      "category": "ice-cream"
+    }
+  ]
+}

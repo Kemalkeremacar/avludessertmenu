@@ -7,6 +7,20 @@ export default {
         display: ['Fraunces', 'Georgia', 'serif'],
         sans: ['Inter', 'system-ui', 'sans-serif'],
       },
+      fontSize: {
+        '2xs': ['0.6875rem', { lineHeight: '1rem', letterSpacing: '0.06em' }],
+        'menu': ['1.0625rem', { lineHeight: '1.45' }],
+        'hero': ['clamp(2rem,6vw,3rem)', { lineHeight: '1.08', letterSpacing: '-0.02em' }],
+        'welcome': ['clamp(2.25rem,7vw,3.25rem)', { lineHeight: '1.08', letterSpacing: '-0.02em' }],
+      },
+      letterSpacing: {
+        label: '0.1em',
+        caps: '0.14em',
+      },
+      lineHeight: {
+        snug: '1.35',
+        relaxed: '1.65',
+      },
       colors: {
         cream: '#faf7f2',
         parchment: '#f0e9df',

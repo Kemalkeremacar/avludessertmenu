@@ -1,7 +1,7 @@
-import { useState } from "react";
-import { Info } from "lucide-react";
+import { Sparkles } from "lucide-react";
 import type { MenuItem } from "../data/menu-types";
 import { useLanguage } from "../i18n/LanguageContext";
+import { tUi } from "../i18n/translations";
 import { pickLocalized } from "../i18n/types";
 
 type Props = {
@@ -10,64 +10,79 @@ type Props = {
 
 export default function ProductCard({ item }: Props) {
   const { lang } = useLanguage();
-  const [showDesc, setShowDesc] = useState(false);
   const name = pickLocalized(item.name, lang);
   const description = pickLocalized(item.description, lang);
   const hasDesc = description.trim().length > 0;
+  const hasPrice = item.price.trim().length > 0;
+  const unavailable = item.isAvailable === false;
+  const isFeatured = item.isPopular === true;
 
   return (
-    <article
-      className="group relative overflow-hidden rounded-2xl border border-gold/25 bg-gradient-to-br from-cream to-parchment pl-5 pr-4 py-4 shadow-soft transition-all duration-200 hover:-translate-y-0.5 hover:border-gold/60 hover:shadow-md"
-      aria-label={name}
+    <li
+      className={[
+        "group mb-2 last:mb-0",
+        isFeatured
+          ? "rounded-2xl border border-gold/25 bg-gradient-to-br from-gold/[0.08] to-parchment/50 p-3.5 sm:p-4"
+          : "rounded-xl px-1 py-3 sm:px-2 sm:py-2.5",
+        unavailable ? "opacity-55 saturate-50" : "",
+      ].join(" ")}
     >
-      {/* Gold accent bar */}
-      <span
-        className="absolute inset-y-0 left-0 w-1 bg-gradient-to-b from-gold-light to-gold"
-        aria-hidden="true"
-      />
+      <div className="flex items-baseline gap-2">
+        <h3
+          className={[
+            "type-item-name min-w-0 flex-1",
+            isFeatured ? "text-lg sm:text-xl" : "",
+          ].join(" ")}
+        >
+          {name}
+        </h3>
 
-      <div className="flex items-start justify-between gap-3">
-        <div className="flex min-w-0 items-start gap-1.5">
-          <h3 className="font-display text-lg font-semibold leading-snug text-espresso sm:text-xl">
-            {name}
-          </h3>
-          {hasDesc && (
-            <button
-              type="button"
-              onClick={() => setShowDesc((v) => !v)}
-              aria-label="Açıklama"
-              aria-expanded={showDesc}
-              className={[
-                "mt-1 shrink-0 rounded-full p-0.5 transition-colors",
-                showDesc ? "text-gold" : "text-mocha/40 hover:text-gold",
-              ].join(" ")}
-            >
-              <Info className="h-[15px] w-[15px]" aria-hidden="true" />
-            </button>
-          )}
-        </div>
-        <span className="mt-0.5 shrink-0 whitespace-nowrap rounded-full bg-espresso px-3 py-1 font-display text-sm font-bold tabular-nums text-cream shadow-sm sm:text-base">
-          {item.price}
-        </span>
+        {hasPrice && <span className="menu-leader" aria-hidden="true" />}
+
+        {hasPrice && (
+          <span
+            className={[
+              "shrink-0 whitespace-nowrap",
+              isFeatured ? "type-item-price-featured text-lg sm:text-xl" : "type-item-price",
+            ].join(" ")}
+          >
+            {item.price}
+          </span>
+        )}
       </div>
 
-      {hasDesc && showDesc && (
-        <div className="mt-3 flex items-start gap-2 rounded-xl border border-gold/20 bg-espresso/95 px-3.5 py-2.5 text-[0.875rem] leading-relaxed text-cream shadow-lg animate-fade-in">
-          <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-gold-light" aria-hidden="true" />
-          <span>{description}</span>
+      {hasDesc && (
+        <p className="type-section-desc mt-0.5 leading-snug text-warmgray/85">
+          {description}
+        </p>
+      )}
+
+      {(isFeatured || unavailable) && (
+        <div className="mt-1.5 flex flex-wrap items-center gap-2">
+          {isFeatured && (
+            <span className="type-badge inline-flex items-center gap-1 rounded-full bg-gold/15 px-2 py-0.5 text-gold">
+              <Sparkles className="h-3 w-3" aria-hidden="true" />
+              {tUi("popular", lang)}
+            </span>
+          )}
+          {unavailable && (
+            <span className="type-badge rounded-full bg-espresso/8 px-2 py-0.5 text-espresso/55">
+              {tUi("unavailable", lang)}
+            </span>
+          )}
         </div>
       )}
 
       {item.image && (
-        <div className="mt-4 aspect-[2.4/1] overflow-hidden rounded-xl">
+        <div className="mt-3 aspect-[2.2/1] overflow-hidden rounded-xl border border-gold/15">
           <img
             src={item.image}
             alt={name}
             loading="lazy"
-            className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+            className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.02]"
           />
         </div>
       )}
-    </article>
+    </li>
   );
 }

@@ -7,10 +7,24 @@
     -webkit-text-size-adjust: 100%;
     text-size-adjust: 100%;
     scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
   }
 
   body {
-    @apply bg-cream text-espresso font-sans antialiased;
+    @apply bg-cream text-espresso font-sans text-[15px] leading-relaxed antialiased;
+    font-feature-settings: "kern" 1, "liga" 1;
+    min-height: 100dvh;
+    min-height: -webkit-fill-available;
+    overscroll-behavior-y: none;
+    padding-left: env(safe-area-inset-left, 0px);
+    padding-right: env(safe-area-inset-right, 0px);
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply font-display font-medium tracking-tight text-balance;
+    font-optical-sizing: auto;
   }
 
   ::selection {
@@ -19,6 +33,120 @@
 }
 
 @layer components {
+  .type-hero {
+    @apply font-display font-medium text-cream drop-shadow-lg;
+    font-size: clamp(2rem, 6vw, 3rem);
+    line-height: 1.08;
+    letter-spacing: -0.02em;
+  }
+
+  .type-welcome-title {
+    @apply font-display font-medium text-cream drop-shadow-lg;
+    font-size: clamp(2.25rem, 7vw, 3.25rem);
+    line-height: 1.08;
+    letter-spacing: -0.02em;
+  }
+
+  .type-tagline {
+    @apply font-display text-base italic leading-relaxed text-cream/90 sm:text-lg;
+  }
+
+  .type-label {
+    @apply font-sans font-medium uppercase;
+    font-size: 0.6875rem;
+    line-height: 1rem;
+    letter-spacing: 0.1em;
+  }
+
+  .type-label-wide {
+    letter-spacing: 0.14em;
+  }
+
+  .type-section-title {
+    @apply font-display text-base font-medium leading-snug text-espresso sm:text-lg;
+  }
+
+  .type-section-desc {
+    @apply font-sans text-xs leading-relaxed text-warmgray;
+  }
+
+  .type-item-name {
+    @apply font-display font-medium text-espresso;
+    font-size: 1.0625rem;
+    line-height: 1.45;
+  }
+
+  .type-item-price {
+    @apply font-display font-semibold tabular-nums tracking-tight text-gold;
+    font-size: 1.0625rem;
+    line-height: 1.45;
+  }
+
+  .type-item-price-featured {
+    @apply font-display font-semibold tabular-nums tracking-tight text-espresso;
+    font-size: 1.0625rem;
+    line-height: 1.45;
+  }
+
+  .type-body {
+    @apply font-sans text-sm leading-relaxed text-mocha;
+  }
+
+  .type-ui {
+    @apply font-sans text-sm font-medium leading-none;
+  }
+
+  .type-caption {
+    @apply font-sans font-normal uppercase text-warmgray;
+    font-size: 0.6875rem;
+    line-height: 1rem;
+    letter-spacing: 0.1em;
+  }
+
+  .type-badge {
+    @apply font-sans font-semibold uppercase;
+    font-size: 0.6875rem;
+    line-height: 1rem;
+    letter-spacing: 0.1em;
+  }
+
+  .type-input {
+    @apply font-sans leading-none text-espresso placeholder:text-warmgray/50;
+    font-size: 16px;
+  }
+
+  .safe-top {
+    padding-top: max(0.75rem, env(safe-area-inset-top, 0px));
+  }
+
+  .safe-bottom {
+    padding-bottom: max(1.5rem, env(safe-area-inset-bottom, 0px));
+  }
+
+  .scroll-anchor {
+    scroll-margin-top: calc(11rem + env(safe-area-inset-top, 0px));
+  }
+
+  .animate-sheet-up {
+    animation: sheet-up 0.3s cubic-bezier(0.32, 0.72, 0, 1) both;
+  }
+
+  @keyframes sheet-up {
+    from {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .touch-target {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
   .menu-divider {
     @apply relative h-px w-full;
     background: linear-gradient(
@@ -40,9 +168,26 @@
       transparent
     );
   }
+
+  .menu-leader {
+    @apply relative top-[-2px] mx-1 min-w-[1.25rem] flex-1 self-end;
+    height: 1px;
+    background-image: radial-gradient(circle, rgba(176, 141, 87, 0.45) 1px, transparent 1px);
+    background-size: 6px 1px;
+    background-repeat: repeat-x;
+    background-position: left bottom;
+  }
+
+  .menu-section-glow {
+    background: radial-gradient(circle at 50% 0%, rgba(212, 185, 138, 0.5), transparent 65%);
+  }
 }
 
 @layer utilities {
+  .touch-manipulation {
+    touch-action: manipulation;
+  }
+
   .no-scrollbar::-webkit-scrollbar {
     display: none;
   }

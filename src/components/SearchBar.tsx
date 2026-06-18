@@ -26,14 +26,14 @@ export default function SearchBar({ value, onChange }: Props) {
         placeholder={tUi("searchPlaceholder", lang)}
         value={value}
         onChange={(e) => onChange(e.target.value)}
-        className="w-full rounded-xl border border-espresso/[0.06] bg-white/80 py-3.5 pl-11 pr-11 text-base text-espresso shadow-soft outline-none transition-all duration-200 placeholder:text-warmgray/45 focus:border-gold/25 focus:shadow-glow sm:py-3.5 sm:text-[0.95rem]"
+        className="type-input min-h-[48px] w-full rounded-xl border border-gold/15 bg-cream py-3 pl-11 pr-12 shadow-soft outline-none transition-all duration-200 focus:border-gold/30 focus:shadow-glow"
       />
       {value && (
         <button
           type="button"
           onClick={() => onChange("")}
           aria-label={tUi("clearSearch", lang)}
-          className="absolute right-3 top-1/2 -translate-y-1/2 rounded-full p-1.5 text-warmgray/50 transition hover:bg-parchment hover:text-espresso"
+          className="touch-target touch-manipulation absolute right-1 top-1/2 flex -translate-y-1/2 items-center justify-center rounded-full text-warmgray/50 transition active:bg-parchment active:text-espresso"
         >
           <X className="h-4 w-4" aria-hidden="true" />
         </button>

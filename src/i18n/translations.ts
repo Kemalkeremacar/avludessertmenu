@@ -3,8 +3,8 @@ import type { Language } from "./types";
 const ui = {
   searchLabel: { tr: "Menüde ara", en: "Search the menu" },
   searchPlaceholder: {
-    tr: "Menüde ara…",
-    en: "Search menu…",
+    tr: "Ürün veya kategori ara…",
+    en: "Search items or categories…",
   },
   clearSearch: { tr: "Aramayı temizle", en: "Clear search" },
   all: { tr: "Tümü", en: "All" },
@@ -25,7 +25,15 @@ const ui = {
     en: "Choose a category to explore the menu",
   },
   selectCategory: { tr: "Kategori Seçin", en: "Select a category" },
+  close: { tr: "Kapat", en: "Close" },
+  searchingAllCategories: {
+    tr: "Arama tüm kategorilerde yapılıyor",
+    en: "Searching all categories",
+  },
   viewAll: { tr: "Tüm Menü", en: "Full Menu" },
+  popular: { tr: "Popüler", en: "Popular" },
+  unavailable: { tr: "Tükendi", en: "Unavailable" },
+  itemDescription: { tr: "Açıklama", en: "Description" },
 } as const;
 
 export function tUi(key: keyof typeof ui, lang: Language): string {
@@ -37,4 +45,11 @@ export function tEmptyWithQuery(lang: Language, query: string): string {
     return `“${query}” için bir sonuç yok. Farklı bir arama veya kategori deneyin.`;
   }
   return `No results for “${query}”. Try a different search or category.`;
+}
+
+export function tItemsCount(lang: Language, count: number): string {
+  if (lang === "tr") {
+    return count === 1 ? "1 ürün" : `${count} ürün`;
+  }
+  return count === 1 ? "1 item" : `${count} items`;
 }

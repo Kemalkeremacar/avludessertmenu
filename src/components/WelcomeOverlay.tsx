@@ -40,49 +40,44 @@ export default function WelcomeOverlay({ cafeName, categories, onSelect }: Props
 
   return (
     <div className="fixed inset-0 z-50 flex flex-col animate-fade-in">
-      {/* Background image */}
       <div
         className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: "url('/courtyard.png')" }}
+        style={{ backgroundImage: "url('/courtyard.webp')" }}
         aria-hidden="true"
       />
-      {/* Dark tint for readability */}
       <div
         className="absolute inset-0 bg-gradient-to-b from-espresso/85 via-espresso/75 to-espresso/90"
         aria-hidden="true"
       />
 
-      {/* Content */}
-      <div className="relative flex h-full flex-col px-5 pb-6 pt-8 sm:px-8">
-        {/* Header */}
+      <div className="relative flex h-[100dvh] flex-col px-4 pb-[max(1rem,env(safe-area-inset-bottom))] pt-[max(1.5rem,env(safe-area-inset-top))] sm:px-8">
         <div className="shrink-0 text-center">
           <Ornament />
-          <h1 className="mt-4 font-display text-4xl font-semibold tracking-tight text-cream drop-shadow-lg sm:text-5xl">
+          <h1 className="type-welcome-title mt-3 sm:mt-4">
             {cafeName}
           </h1>
-          <p className="mx-auto mt-2 max-w-xs text-sm text-cream/70 sm:text-base">
+          <p className="type-body mx-auto mt-2 max-w-xs text-cream/75">
             {tUi("welcomeSubtitle", lang)}
           </p>
-          <div className="mt-4">
+          <div className="mt-3 sm:mt-4">
             <Ornament />
           </div>
         </div>
 
-        {/* Category grid */}
-        <div className="no-scrollbar mx-auto mt-6 w-full max-w-md flex-1 overflow-y-auto">
-          <div className="flex flex-wrap justify-center gap-3 pb-2">
+        <div className="no-scrollbar mx-auto mt-4 w-full max-w-md flex-1 overflow-y-auto sm:mt-6">
+          <div className="grid grid-cols-2 gap-2.5 pb-2 sm:gap-3">
             {categories.map((c, i) => (
               <button
                 key={c.id}
                 type="button"
                 onClick={() => onSelect(c.id)}
                 style={{ animationDelay: `${i * 35}ms` }}
-                className="group flex w-[calc(50%-0.375rem)] animate-fade-in flex-col items-center justify-center gap-2.5 rounded-2xl border border-cream/15 bg-cream/[0.07] px-3 py-5 text-center backdrop-blur-md transition-all duration-200 hover:-translate-y-0.5 hover:border-gold/50 hover:bg-cream/[0.14] active:scale-95"
+                className="group touch-manipulation animate-fade-in flex min-h-[5.75rem] flex-col items-center justify-center gap-2 rounded-2xl border border-cream/15 bg-cream/[0.07] px-2 py-3 text-center backdrop-blur-md transition-all duration-200 active:scale-[0.98] active:border-gold/50 active:bg-cream/[0.14] sm:min-h-[6.5rem] sm:gap-2.5 sm:px-3 sm:py-5"
               >
-                <span className="flex h-11 w-11 items-center justify-center rounded-full bg-gold/15 text-gold-light transition-colors group-hover:bg-gold/30">
+                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gold/15 text-gold-light sm:h-11 sm:w-11">
                   <CategoryIcon categoryId={c.id} className="h-5 w-5" />
                 </span>
-                <span className="text-[0.8rem] font-medium leading-tight text-cream sm:text-sm">
+                <span className="type-ui line-clamp-3 text-[11px] leading-snug text-cream sm:text-xs">
                   {pickLocalized(c.label, lang)}
                 </span>
               </button>
@@ -90,12 +85,11 @@ export default function WelcomeOverlay({ cafeName, categories, onSelect }: Props
           </div>
         </div>
 
-        {/* View all */}
-        <div className="shrink-0 pt-4 text-center">
+        <div className="safe-bottom shrink-0 pt-3 text-center sm:pt-4">
           <button
             type="button"
             onClick={() => onSelect("all")}
-            className="inline-flex items-center gap-2 rounded-full bg-cream px-7 py-3 text-sm font-semibold tracking-wide text-espresso shadow-lg transition-all duration-200 hover:bg-gold-light active:scale-95"
+            className="type-ui touch-manipulation mx-auto flex min-h-[48px] w-full max-w-md items-center justify-center gap-2 rounded-full bg-cream px-7 py-3 font-semibold tracking-wide text-espresso shadow-lg transition-all duration-200 active:scale-[0.98] active:bg-gold-light sm:w-auto sm:min-w-[12rem]"
           >
             {tUi("viewAll", lang)}
             <ArrowRight className="h-4 w-4" aria-hidden="true" />

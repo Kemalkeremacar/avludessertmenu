@@ -31,20 +31,20 @@ export default function CafeHeader({ cafe }: Props) {
   const { lang } = useLanguage();
 
   return (
-    <header className="relative bg-gradient-to-b from-espresso/60 via-espresso/30 to-transparent px-4 pb-12 pt-6 sm:px-6 sm:pb-16 sm:pt-9">
+    <header className="relative bg-gradient-to-b from-espresso/60 via-espresso/30 to-transparent px-4 pb-8 pt-[max(1.25rem,env(safe-area-inset-top))] sm:px-6 sm:pb-16 sm:pt-9">
       <div className="mx-auto max-w-2xl text-center">
         <Ornament />
 
-        <h1 className="mt-3 font-display text-[2.2rem] font-semibold leading-none tracking-tight text-cream drop-shadow-lg sm:mt-4 sm:text-[3rem]">
+        <h1 className="type-hero mt-3 sm:mt-4">
           {cafe.name}
         </h1>
 
-        <p className="mx-auto mt-3 max-w-sm font-display text-base italic leading-relaxed text-cream/90 drop-shadow-md sm:text-lg">
+        <p className="type-tagline mx-auto mt-3 max-w-sm drop-shadow-md">
           {pickLocalized(cafe.tagline, lang)}
         </p>
 
         {cafe.hours && (
-          <p className="mt-4 inline-flex items-center gap-2 rounded-full border border-cream/25 bg-black/25 px-4 py-1.5 text-[11px] font-medium uppercase tracking-[0.12em] text-cream backdrop-blur-sm">
+          <p className="type-label mt-4 inline-flex items-center gap-2 rounded-full border border-cream/25 bg-black/25 px-4 py-1.5 text-cream backdrop-blur-sm">
             <Clock className="h-3 w-3 text-gold-light" aria-hidden="true" />
             {pickLocalized(cafe.hours, lang)}
           </p>
