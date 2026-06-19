@@ -31,6 +31,12 @@ const ui = {
     en: "Searching all categories",
   },
   viewAll: { tr: "Tüm Menü", en: "Full Menu" },
+  discountBadge: { tr: "Özel Fırsat", en: "Special Offer" },
+  discountHeadline: { tr: "İNDİRİM", en: "OFF" },
+  discountApplied: {
+    tr: "AÇILIŞA ÖZEL TÜM ÜRÜNLERDE",
+    en: "OPENING SPECIAL ON ALL ITEMS",
+  },
   popular: { tr: "Popüler", en: "Popular" },
   unavailable: { tr: "Tükendi", en: "Unavailable" },
   itemDescription: { tr: "Açıklama", en: "Description" },

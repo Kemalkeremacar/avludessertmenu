@@ -118,12 +118,20 @@ export default function App() {
         />
       )}
 
-      <div className="relative z-10 mx-auto w-full max-w-lg px-4 sm:max-w-xl sm:px-6 md:max-w-2xl lg:max-w-6xl lg:px-8">
+      <div
+        className={[
+          "relative z-10 mx-auto w-full max-w-lg px-4 sm:max-w-xl sm:px-6 md:max-w-2xl lg:max-w-6xl lg:px-8",
+          showWelcome && "invisible pointer-events-none",
+        ]
+          .filter(Boolean)
+          .join(" ")}
+        {...(showWelcome ? { "aria-hidden": "true" as const } : {})}
+      >
         <CafeHeader cafe={cafeInfo} />
 
-        <main className="pb-[max(5rem,env(safe-area-inset-bottom))] lg:grid lg:grid-cols-[13.5rem_minmax(0,1fr)] lg:items-start lg:gap-8">
-          <aside className="hidden lg:block">
-            <div className="sticky top-6 max-h-[calc(100dvh-3rem)] overflow-y-auto rounded-2xl border border-gold/15 bg-parchment/95 p-3 shadow-soft backdrop-blur-sm">
+        <main className="pb-[max(5rem,env(safe-area-inset-bottom))] lg:grid lg:grid-cols-[13.5rem_minmax(0,1fr)] lg:gap-8">
+          <aside className="hidden lg:block lg:min-h-0">
+            <div className="sticky top-4 z-30 max-h-[calc(100dvh-2rem)] overflow-y-auto rounded-2xl border border-gold/15 bg-parchment/95 p-3 shadow-soft backdrop-blur-sm">
               <p className="type-caption mb-2 px-2 text-warmgray/80">
                 {tUi("categories", lang)}
               </p>

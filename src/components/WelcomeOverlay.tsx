@@ -5,6 +5,7 @@ import { useLanguage } from "../i18n/LanguageContext";
 import { pickLocalized } from "../i18n/types";
 import { tUi } from "../i18n/translations";
 import CategoryIcon from "./CategoryIcon";
+import DiscountPromoBanner from "./DiscountPromoBanner";
 
 type Props = {
   cafeName: string;
@@ -32,27 +33,52 @@ export default function WelcomeOverlay({ cafeName, categories, onSelect }: Props
   const { lang } = useLanguage();
 
   useEffect(() => {
-    document.body.style.overflow = "hidden";
+    const scrollY = window.scrollY;
+    const { style } = document.body;
+    const previous = {
+      position: style.position,
+      top: style.top,
+      left: style.left,
+      right: style.right,
+      overflow: style.overflow,
+    };
+
+    style.position = "fixed";
+    style.top = `-${scrollY}px`;
+    style.left = "0";
+    style.right = "0";
+    style.overflow = "hidden";
+
     return () => {
-      document.body.style.overflow = "";
+      style.position = previous.position;
+      style.top = previous.top;
+      style.left = previous.left;
+      style.right = previous.right;
+      style.overflow = previous.overflow;
+      window.scrollTo(0, scrollY);
     };
   }, []);
 
   return (
-    <div className="fixed inset-0 z-50 flex animate-fade-in">
-      <div
-        className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: "url('/courtyard.webp')" }}
-        aria-hidden="true"
-      />
-      <div
-        className="absolute inset-0 bg-gradient-to-b from-espresso/85 via-espresso/75 to-espresso/90 md:from-espresso/70 md:via-espresso/55 md:to-espresso/70"
-        aria-hidden="true"
-      />
+    <div className="fixed inset-0 z-50 touch-pan-y animate-fade-in overflow-x-hidden overflow-y-auto overscroll-y-contain bg-espresso">
+      <div className="relative min-h-[100dvh]">
+        <div
+          className="pointer-events-none absolute inset-0 min-h-full bg-espresso"
+          aria-hidden="true"
+        />
+        <div
+          className="pointer-events-none absolute inset-0 min-h-full bg-cover bg-center"
+          style={{ backgroundImage: "url('/courtyard.webp')" }}
+          aria-hidden="true"
+        />
+        <div
+          className="pointer-events-none absolute inset-0 min-h-full bg-gradient-to-b from-espresso/95 via-espresso/90 to-espresso/95 md:from-espresso/90 md:via-espresso/85 md:to-espresso/90"
+          aria-hidden="true"
+        />
 
-      <div className="relative flex h-[100dvh] w-full items-center justify-center px-4 pb-[max(1rem,env(safe-area-inset-bottom))] pt-[max(1.5rem,env(safe-area-inset-top))] sm:px-6 md:p-8">
-        <div className="flex w-full max-w-md flex-col overflow-hidden md:max-w-3xl md:rounded-3xl md:border md:border-cream/15 md:bg-espresso/50 md:p-8 md:shadow-2xl md:backdrop-blur-md lg:max-w-4xl lg:p-10">
-          <div className="shrink-0 text-center">
+        <div className="relative flex min-h-[100dvh] w-full justify-center px-4 pb-[max(1.5rem,env(safe-area-inset-bottom))] pt-[max(1.5rem,env(safe-area-inset-top))] sm:px-6 md:p-8">
+        <div className="flex w-full max-w-md flex-col md:my-auto md:max-w-3xl md:rounded-3xl md:border md:border-cream/15 md:bg-espresso/50 md:p-8 md:shadow-2xl md:backdrop-blur-md lg:max-w-4xl lg:p-10">
+          <div className="text-center">
             <Ornament />
             <h1 className="type-welcome-title mt-3 sm:mt-4">{cafeName}</h1>
             <p className="type-body mx-auto mt-2 max-w-xs text-cream/75 md:max-w-md">
@@ -61,10 +87,12 @@ export default function WelcomeOverlay({ cafeName, categories, onSelect }: Props
             <div className="mt-3 sm:mt-4">
               <Ornament />
             </div>
+
+            <DiscountPromoBanner />
           </div>
 
-          <div className="no-scrollbar mt-4 max-h-[calc(100dvh-15.5rem)] overflow-y-auto overscroll-y-contain sm:mt-6 md:max-h-[min(58vh,26rem)]">
-            <div className="welcome-category-grid grid grid-cols-2 gap-2.5 pb-2 sm:grid-cols-3 sm:gap-3 md:grid-cols-4 lg:grid-cols-5">
+          <div className="mt-4 sm:mt-5">
+            <div className="welcome-category-grid grid grid-cols-2 gap-2.5 sm:grid-cols-3 sm:gap-3 md:grid-cols-4 lg:grid-cols-5">
               {categories.map((c, i) => (
                 <button
                   key={c.id}
@@ -84,7 +112,7 @@ export default function WelcomeOverlay({ cafeName, categories, onSelect }: Props
             </div>
           </div>
 
-          <div className="safe-bottom shrink-0 pt-3 text-center sm:pt-4 md:pt-5">
+          <div className="pt-3 text-center sm:pt-4 md:pt-5">
             <button
               type="button"
               onClick={() => onSelect("all")}
@@ -94,6 +122,7 @@ export default function WelcomeOverlay({ cafeName, categories, onSelect }: Props
               <ArrowRight className="h-4 w-4" aria-hidden="true" />
             </button>
           </div>
+        </div>
         </div>
       </div>
     </div>
