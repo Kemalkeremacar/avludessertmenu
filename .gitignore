@@ -16,4 +16,8 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 .vercel
+
+# Misc
+*.xlsx
+*.xls
 .env*

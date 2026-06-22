@@ -6,19 +6,25 @@ import CategoryTabs from "./components/CategoryTabs";
 import ProductList from "./components/ProductList";
 import EmptyState from "./components/EmptyState";
 import WelcomeOverlay from "./components/WelcomeOverlay";
-import { cafeInfo, categories, menuItems } from "./data/menu-data";
+import { getCategories, getCafeInfo, getMenuItems } from "./api/menu";
+import {
+  cafeInfo as staticCafeInfo,
+  categories as staticCategories,
+  menuItems as staticMenuItems,
+} from "./data/menu-data";
 import { useLanguage } from "./i18n/LanguageContext";
 import { tUi } from "./i18n/translations";
+import type { CafeInfo, MenuCategory, MenuItem } from "./data/menu-types";
 
 const BACKGROUND_IMAGE = "/courtyard.webp";
 
-function isValidCategory(id: string): boolean {
+function isValidCategory(id: string, categories: MenuCategory[]): boolean {
   return id === "all" || categories.some((c) => c.id === id);
 }
 
-function readCategoryFromUrl(): string {
+function readCategoryFromUrl(categories: MenuCategory[]): string {
   const cat = new URLSearchParams(window.location.search).get("cat");
-  if (cat && isValidCategory(cat)) return cat;
+  if (cat && isValidCategory(cat, categories)) return cat;
   return "all";
 }
 
@@ -34,25 +40,68 @@ function writeCategoryToUrl(category: string) {
 
 export default function App() {
   const { lang } = useLanguage();
+  const [cafeInfo, setCafeInfo] = useState<CafeInfo>(staticCafeInfo);
+  const [categories, setCategories] = useState<MenuCategory[]>(staticCategories);
+  const [menuItems, setMenuItems] = useState<MenuItem[]>(staticMenuItems);
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
   const [query, setQuery] = useState("");
-  const [activeCategory, setActiveCategory] = useState(readCategoryFromUrl);
+  const [activeCategory, setActiveCategory] = useState(() =>
+    readCategoryFromUrl(staticCategories)
+  );
   const [showWelcome, setShowWelcome] = useState(true);
 
-  const handleCategoryChange = useCallback((id: string) => {
-    setActiveCategory(id);
-    writeCategoryToUrl(id);
+  useEffect(() => {
+    let cancelled = false;
 
-    if (id !== "all") {
-      window.setTimeout(() => {
-        document.getElementById(`cat-${id}`)?.scrollIntoView({
-          behavior: "smooth",
-          block: "start",
-        });
-      }, 50);
-    } else {
-      window.scrollTo({ top: 0, behavior: "smooth" });
+    async function load() {
+      try {
+        setIsLoading(true);
+        const [loadedCategories, loadedCafeInfo, loadedItems] = await Promise.all(
+          [getCategories(), getCafeInfo(), getMenuItems()]
+        );
+        if (cancelled) return;
+
+        setCategories(loadedCategories);
+        setCafeInfo(loadedCafeInfo);
+        setMenuItems(loadedItems);
+        setActiveCategory((current) =>
+          isValidCategory(current, loadedCategories) ? current : "all"
+        );
+        setError(null);
+      } catch (err) {
+        if (cancelled) return;
+        console.error("Failed to load menu data:", err);
+        setError("Menü verileri yüklenemedi. Statik veriler gösteriliyor.");
+      } finally {
+        if (!cancelled) setIsLoading(false);
+      }
     }
+
+    load();
+    return () => {
+      cancelled = true;
+    };
   }, []);
+
+  const handleCategoryChange = useCallback(
+    (id: string) => {
+      setActiveCategory(id);
+      writeCategoryToUrl(id);
+
+      if (id !== "all") {
+        window.setTimeout(() => {
+          document.getElementById(`cat-${id}`)?.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+          });
+        }, 50);
+      } else {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+    },
+    []
+  );
 
   const handleWelcomeSelect = (id: string) => {
     setShowWelcome(false);
@@ -61,11 +110,11 @@ export default function App() {
 
   useEffect(() => {
     const onPopState = () => {
-      setActiveCategory(readCategoryFromUrl());
+      setActiveCategory(readCategoryFromUrl(categories));
     };
     window.addEventListener("popstate", onPopState);
     return () => window.removeEventListener("popstate", onPopState);
-  }, []);
+  }, [categories]);
 
   const normalizedQuery = query.trim().toLowerCase();
   const isSearching = normalizedQuery.length > 0;
@@ -96,7 +145,7 @@ export default function App() {
 
       return matchesCategory && matchesQuery;
     });
-  }, [normalizedQuery, isSearching, activeCategory]);
+  }, [menuItems, categories, normalizedQuery, isSearching, activeCategory]);
 
   return (
     <div className="relative min-h-[100dvh] bg-cream">
@@ -170,20 +219,34 @@ export default function App() {
               </div>
             </div>
 
-            <section
-              className="mt-4 sm:mt-5 lg:mt-6 lg:rounded-3xl lg:border lg:border-gold/15 lg:bg-parchment/92 lg:p-5 lg:shadow-soft lg:backdrop-blur-sm xl:p-6"
-              aria-live="polite"
-            >
-              {filteredItems.length > 0 ? (
-                <ProductList
-                  items={filteredItems}
-                  categories={categories}
-                  activeCategory={isSearching ? "all" : activeCategory}
-                />
-              ) : (
-                <EmptyState query={query.trim()} />
-              )}
-            </section>
+            {isLoading && (
+              <div className="mt-6 flex items-center justify-center lg:mt-8">
+                <p className="type-body text-espresso/60">Yükleniyor...</p>
+              </div>
+            )}
+
+            {!isLoading && error && (
+              <div className="mt-4 rounded-lg bg-red-100 px-4 py-3 text-sm text-red-700 sm:mt-5 lg:mt-6">
+                {error}
+              </div>
+            )}
+
+            {!isLoading && (
+              <section
+                className="mt-4 sm:mt-5 lg:mt-6 lg:rounded-3xl lg:border lg:border-gold/15 lg:bg-parchment/92 lg:p-5 lg:shadow-soft lg:backdrop-blur-sm xl:p-6"
+                aria-live="polite"
+              >
+                {filteredItems.length > 0 ? (
+                  <ProductList
+                    items={filteredItems}
+                    categories={categories}
+                    activeCategory={isSearching ? "all" : activeCategory}
+                  />
+                ) : (
+                  <EmptyState query={query.trim()} />
+                )}
+              </section>
+            )}
           </div>
         </main>
 
